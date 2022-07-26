@@ -55,7 +55,8 @@ rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3
                     and displays the 5, 15, 50, and 200 day moving averages along with support and resistance levels when the user clicks on them. The algorithm used
                     is from a medium article, found within the References and Sources section below, that I applied to my own project to help with visualizing the chosen stock's behavior. Click the button below to see it in action!
                 </p>
-                <a href="#" class="btn btn-primary btn-lg">
+                <a href="https://dash-app-stock.azurewebsites.net/" class="btn btn-primary btn-lg" target="_blank" 
+                rel="noopener noreferrer">
                     Click here to demo
                 </a>
             </div>
@@ -89,37 +90,37 @@ rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3
             <div class="d-sm-flex row align-items-center justify-content-between">
                 
                 <div class="col-md">
-                    <h2><span class=text-primary>Features</span> and Highlights</h2>
+                    <h2 style="text-decoration-line:underline; text-decoration-color:slategray"><span class=text-primary>Features</span> and Highlights</h2>
                     <ul>
-                        <li class="lead text-light">Candlestick chart showing open, high, low, close values</li>
-                        <li class="lead text-light">5, 15, 50, 200 standard moving averages</li>
-                        <li class="lead text-light">Volume, RSI, and MACD indicators</li>
-                        <li class="lead text-light">Support/Resistance value detection and plotting</li>
-                        <li class="lead text-light">Interactive legend</li>
+                        <li class="text-light">Candlestick chart showing open, high, low, close values</li>
+                        <li class="text-light">5, 15, 50, 200 standard moving averages</li>
+                        <li class="text-light">Volume, RSI, and MACD indicators</li>
+                        <li class="text-light">Support/Resistance value detection and plotting</li>
+                        <li class="text-light">Interactive legend</li>
 
                     </ul>
                     <h2 id="project_descriptions"><span class=text-primary>Motivations</span> for project</h2>
-                    <p class="lead text-light">
+                    <p class="text-light">
                         During the COVID-19 pandemic, we all saw and experienced things that were outside of our daily norm. Toilet paper was flying off shelves, 
                         conducting business and socializing was done virtually, and the stock market and economy seemed to be heading down towards the abyss. Then, thanks to
                         the economic stimulus and near-zero interest rates, the stock market made a comeback that attracted an unprecedented amount of volume and volatility. 
                     </p>
                 </br>
-                <p class="lead text-light">
+                <p class="text-light">
                     To better visualize and analyze the trends and price movements of a particular stock, I wanted to make an application that would equip users with 
                     the indicators and moving averages they'd need to implement some basic trading strategies. While trying to make sense of the market myself as a beginner,
                     I found the UI and settings of some applications to be cumbersome or confusing, so I wanted to offer a more streamlined approach.
                 </p>
 
                 <h2 id="project_descriptions"><span class=text-primary>Why</span> I Built This Project</h2>
-                <p class="lead text-light">I built this project because I wanted to make an application that consumed data from an API, which is the <a href="https://pypi.org/project/yfinance/" target="_blank" rel="noopener noreferrer">yfinance API</a>
+                <p class="text-light">I built this project because I wanted to make an application that consumed data from an API, which is the <a href="https://pypi.org/project/yfinance/" target="_blank" rel="noopener noreferrer">yfinance API</a>
                     in this case. During one of my programming classes, I was introduced to the pandas library and learned how to plot and analyze data using the dataframes object
                    and the Matplotlib plotting library. Since I already had some experience with using dataframe objects to output a graph, I wanted to build on top of that knowledge.
                    After google searching around for different ways of analyzing stock data, I came across the <a href="https://plotly.com" target="_blank" rel="noopener noreferrer">Plotly and Dash libraries</a> and decided that I wanted to learn more about them.
                 </p>
 
                 <h2 id="project_descriptions"><span class=text-primary>What</span> I Learned</h2>
-                <p class="lead text-light">While developing this stock application, I learned some really interesting things. I learned how to consume data from the yfinance API that pulls its data from the 
+                <p class="text-light">While developing this stock application, I learned some really interesting things. I learned how to consume data from the yfinance API that pulls its data from the 
                    Yahoo! Finance website. I also got experience with using the built-in functions to plot the interactive candlestick chart using the Plotly graphing library. From there,
                    I learned how to plot multiple subplots on a single page instead of relying on just the single candlestick chart. I chose to make a MACD(Moving Average Cross Divergence) subplot, a volume
                    subplot, and also an RSI(Relative Strength Index) subplot. I came across a few different ways of calculating the RSI and MACD values, and decided to use the <a href="https://technical-analysis-library-in-python.readthedocs.io/en/latest/#" 
@@ -131,17 +132,17 @@ rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3
                 </p>
 
                 <h2 id="project_descriptions"><span class=text-primary>References</span> and Sources</h2>
-                <p class="lead text-light"></p>
+                <p class="text-light"></p>
                 <ul>
-                    <li class="lead text-light"><u>Yong Hong Tran</u> and his <a href="https://python.plainenglish.io/a-simple-guide-to-plotly-for-plotting-financial-chart-54986c996682" 
+                    <li class="text-light"><u>Yong Hong Tran</u> and his <a href="https://python.plainenglish.io/a-simple-guide-to-plotly-for-plotting-financial-chart-54986c996682" 
                         target="_blank" 
                         rel="noopener noreferrer">medium article</a> on plotly financial charts</li>
 
-                    <li class="lead text-light"><u>Ran Aroussi</u> and his <a href="https://pypi.org/project/yfinance/" 
+                    <li class="text-light"><u>Ran Aroussi</u> and his <a href="https://pypi.org/project/yfinance/" 
                         target="_blank" 
                         rel="noopener noreferrer">documentation on how to use his yfinance API</a></li>
 
-                    <li class="lead text-light"><u>Gianluca Malato</u> and his <a href="https://towardsdatascience.com/detection-of-price-support-and-resistance-levels-in-python-baedc44c34c9" 
+                    <li class="text-light"><u>Gianluca Malato</u> and his <a href="https://towardsdatascience.com/detection-of-price-support-and-resistance-levels-in-python-baedc44c34c9" 
                         target="_blank" 
                         rel="noopener noreferrer">article on how to detect price support and resistance levels</a></li>
                     </ul>
