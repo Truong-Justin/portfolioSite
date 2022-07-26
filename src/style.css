@@ -15,11 +15,14 @@
 
 #project_titles {
     text-decoration:underline;
+    text-decoration-color:slategray;
     
 }
 
 #project_descriptions {
     margin-top:100px;
+    text-decoration-line:underline;
+    text-decoration-color:slategray;
 }
 
 #paragraph_spacing {
@@ -30,6 +33,7 @@
     display: flex;
     justify-content: center;
 }
+
 
 .card{
     height: 100%; 
