@@ -51,6 +51,10 @@ rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3
 <section class="bg-dark text-light p-4 text-center text-sm-start">
 <div class="container">
     <div class="d-sm-flex align-items-center justify-content-between">
+        <img class="img-fluid w-75 d-sm-none" 
+             src="images/profile_picture.jpeg" 
+             alt="me" 
+             id="profile_pic">
         <div class="py-5">
             <h1>A Little <span class="text-primary">About </span>Me</h1>
             <p class="lead my-4">
@@ -59,9 +63,10 @@ rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3
                 at a company where I can learn and grow. Below you'll find my projects and skills. If you have any questions, 
                 please don't hesitate to reach out!
             </p>
+            
 
         </div>
-        <img class="img-fluid w-75" 
+        <img class="img-fluid w-75 d-none d-sm-block" 
         src="images/profile_picture.jpeg" 
         alt="me" 
         id="profile_pic">
@@ -174,7 +179,7 @@ rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3
 
 
     
-    <h1 class="text-center my-2" id="section_title">Projects</h1>               
+    <h1 class="text-center my-5" id="section_title">Projects</h1>               
 
     <!--Projects Section-->
     <section id="learn" class="p-5 bg">
@@ -185,7 +190,7 @@ rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3
                 </div>
                 <div class="col-md p-5">
                     <h2 class="text-primary" id="project_titles">Python Stock App</h2>
-                    <p class="lead">
+                    <p>
                         A Python stock app that collects stock data using the <span class="text-primary" id="section_keywords">yfinance api</span>, and displays the data using 
                         the <span class="text-primary" id="section_keywords">Plotly</span> graphing tool & the <span class="text-primary" id="section_keywords">Dash</span> framework. 
                         Stock data is pulled from the Yahoo! Finance website using the api and stored within a pandas Dataframe. Plotly was used to make the main OHLC candlestick chart, 
@@ -204,18 +209,19 @@ rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3
         
         <div class="container">
             <div class="row align-items-center justify-content-between">
-                
                 <div class="col-md p-5">
+                    <img src="images/JavaScript.svg" class="img-fluid w-75 d-sm-none" alt="">
                     <h2 class="text-warning" id="project_titles">REST Horoscope API</h2>
-                    <p class="lead text-light">
-                        A REST API that will be built using Python and the Flask framework. 
+                    <p class="text-light">
+                        A REST API that will be built using Python and the Flask framework. The app will reply with the appropriate string values that can be used to 
+                        dynamically render a user's horoscope information based on their astrological sign.
                     </p>
                     <a href="#" class="btn btn-warning mt-3">
                         <i class="bi bi-chevron-right"></i> In Progress
                     </a>
                 </div>
                 <div class="col-md">
-                    <img src="images/JavaScript.svg" class="img-fluid w-75" alt="Rest Horoscope App">
+                    <img src="images/JavaScript.svg" class="img-fluid w-75 d-none d-sm-block" alt="Rest Horoscope App">
                 </div>
             </div>
         </div>
@@ -230,7 +236,7 @@ rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3
                 </div>
                 <div class="col-md p-5">
                     <h2 class="text-primary" id="project_titles">Base Number Converter</h2>
-                    <p class="lead">
+                    <p>
                         A C# application that utilizes the .Net framework and converts a number to a decimal, binary, octal, or hexadecimal.  
                     </p>
                     <a href="#" class="btn btn-warning mt-3">
