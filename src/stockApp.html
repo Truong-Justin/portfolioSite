@@ -11,6 +11,7 @@ rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3
  crossorigin="anonymous">
 <link rel="stylesheet" href="style.css">
 
+
 <title>Justin's Web Portfolio</title>
 
 </head>
@@ -53,12 +54,20 @@ rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3
                     This project was made using Python, Plotly and Dash, and the yfinance api. My goal was to make a simple dashboard application that 
                     would output a candlestick chart, standard moving averages, and some commonly used indicators below the main plots. The legend is interactive
                     and displays the 5, 15, 50, and 200 day moving averages along with support and resistance levels when the user clicks on them. The algorithm used
-                    is from a medium article, found within the References and Sources section below, that I applied to my own project to help with visualizing the chosen stock's behavior. Click the button below to see it in action!
+                    is from a medium article, found within the References and Sources section below, that I applied to my own project to help with visualizing the chosen stock's behavior. 
+                    The application itself is hosted on <span class="text-primary" style=text-decoration-line:underline>Microsoft Azure</span>. Click the button below to see it in action!
                 </p>
                 <a href="https://dash-app-stock.azurewebsites.net/" class="btn btn-primary btn-lg" target="_blank" 
                 rel="noopener noreferrer">
                     Click here to demo
                 </a>
+                <a href="https://github.com/Truong-Justin/dash-app-stock" class="btn btn-secondary btn-lg" target="_blank" 
+                rel="noopener noreferrer">
+                    Click here for code
+                </a>
+                
+
+                
             </div>
             <img class="img-fluid w-25 d-none d-sm-block" 
             src="images/programming.svg" 
@@ -125,11 +134,10 @@ rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3
                    I learned how to plot multiple subplots on a single page instead of relying on just the single candlestick chart. I chose to make a MACD(Moving Average Cross Divergence) subplot, a volume
                    subplot, and also an RSI(Relative Strength Index) subplot. I came across a few different ways of calculating the RSI and MACD values, and decided to use the <a href="https://technical-analysis-library-in-python.readthedocs.io/en/latest/#" 
                    target="_blank" rel="noopener noreferrer">Technical Analysis library</a> to derive the values I needed. Using the Dash framework, I learned how to use a callback function to change the value of the stock choice used to output the graphs, indicators, 
-                   and the support and resistance values. 
-
-                   
-
+                   and the support and resistance values. Finally, I deployed the working application using Microsoft Azure and Github for version control. 
                 </p>
+
+                
 
                 <h2 id="project_descriptions"><span class=text-primary>References</span> and Sources</h2>
                 <p class="text-light"></p>
