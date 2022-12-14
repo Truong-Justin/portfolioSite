@@ -103,10 +103,11 @@ rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3
                     <img src="images/horoscope.svg" class="img-fluid w-75 d-sm-none" alt="">
                     <h2 class="text-warning" id="project_titles">REST Horoscope API</h2>
                     <p class="text-light">
-                        A REST API and web application that will be built using: Python and the Flask 
+                        A REST API and web application built using: Python and the Flask 
                         framework for the API, and C# and ASP.Net along with HTML/CSS and Bootstrap 5. 
-                        The app will reply with the appropriate string values that can be used to 
-                        dynamically render a user's horoscope information based on their astrological sign.
+                        The Python REST API returns a JSON object with the appropriate horoscope data. The C# Web Application 
+                        takes the user's horoscope sign and day, uses it to send a GET request to the correct API endpoint, and
+                        parses the JSON object for the necessary horoscope data. 
                     </p>
                     <a href="https://horoscopewebapp.azurewebsites.net/main.aspx" class="btn btn-warning mt-3">
                         <i class="bi bi-chevron-right"></i> Read More
