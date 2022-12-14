@@ -38,3 +38,19 @@
 .card{
     height: 100%; 
   }
+
+#imageRight
+  {
+    float:right;
+  }
+
+#border {
+    border-width:4px;
+    border-radius:10px;
+    border-style:solid;
+    border-color:black;
+  }
+
+#round_div {
+    border-radius:4px;
+  }
