@@ -1,0 +1,90 @@
+#profile_pic {
+    border-radius:50%;
+}
+
+#section_title {
+    text-decoration:underline;
+    margin-top:100px;
+    
+}
+
+#section_keywords {
+    text-decoration:underline;
+    font-weight:bold;
+}
+
+#project_titles {
+    text-decoration:underline;
+    text-decoration-color:slategray;
+    
+}
+
+#project_descriptions {
+    margin-top:50px;
+    text-decoration-line:underline;
+    text-decoration-color:slategray;
+}
+
+#paragraph_spacing {
+    margin-top:25px;
+}
+
+#center_image {
+    display:flex;
+    justify-content:center;
+}
+
+
+.card{
+    height:100%; 
+  }
+
+#image_right
+  {
+    float:right;
+    max-height:auto;
+    max-width:70%;
+  }
+
+  #image_right_stockdash {
+    float:right;
+    max-height:auto;
+    max-width:75%;
+  }
+
+#border {
+    border-width:4px;
+    border-radius:10px;
+    border-style:solid;
+    border-color:black;
+  }
+
+#round_div {
+    border-radius:4px;
+  }
+
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #e5e3e3;
+    margin:1em 0;
+    padding:0;
+}
+
+#project_picture_resize {
+  max-height:auto;
+  max-width:65%;
+}
+
+p {
+  color: rgb(197, 197, 198);
+}
+
+li {
+  color: rgb(197, 197, 198);
+}
+
+.card-text {
+  color: rgb(223, 229, 236);
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--https://undraw.co/illustrations
+        illustrations-->
+<meta charset=""UTF-8">
+<meta http-equiv=""X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=devide-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+ crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+
+
+<title>Justin's Web Portfolio</title>
+
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+    <div class="container">
+        <a href="index.html" class="navbar-brand">Web <span class="text-primary">Portfolio</span></a>
+        <button class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="cv.html" class="nav-link">CV</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--Showcase-->
+<section class="bg-dark text-light p-4 text-center text-sm-start">
+    <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+            <div class="py-5">
+                <h1><span class="text-primary">Python </span>Stock Dashboard</h1>
+                <p class="lead my-4">
+                    This project was made using Python, Plotly and Dash, and the yfinance api. My goal was to make a simple dashboard application that 
+                    would output a candlestick chart, standard moving averages, and some commonly used indicators below the main plots. The legend is interactive
+                    and displays the 5, 15, 50, and 200 day moving averages along with support and resistance levels when the user clicks on them. Fibonnaci retracement is used to find the 
+                    support and resistance levels. The application itself is hosted on <span class="text-warning" style=text-decoration-line:underline>Amazon AWS Beanstalk</span>. Click the button below to see it in action!
+                </p>
+                <a href="https://stockdash.justintruong.studio" class="btn btn-primary btn-lg" target="_blank" 
+                rel="noopener noreferrer">
+                    Click here to demo
+                </a>
+                <a href="https://github.com/Truong-Justin/dash-app-stock" class="btn btn-secondary btn-lg my-4" target="_blank" 
+                rel="noopener noreferrer">
+                    Click here for code
+                </a>
+                
+
+                
+            </div>
+            <img class="img-fluid w-25 d-none d-sm-block" 
+            src="images/programming.svg" 
+            alt="programming picture" 
+            >
+        </div>
+    </div>
+    </section>
+
+
+<!--Example picture of stock app-->
+    <section id="learn" class="p-5 bg">
+        <div class="container">
+            <div class="d-sm-flex row align-items-center justify-content-between">
+                <div class="col-md">
+                    <img src="images/AAPL.png" class="img-fluid ms-5 shadow" alt="Stock App Image">
+                        
+                </div>
+                
+            </div>
+        </div>
+
+    </section>
+
+    <!--Project information-->
+    <section id="learn" class="p-5 bg-dark text-light">
+        
+        <div class="container">
+            <div class="d-sm-flex row align-items-center justify-content-between">
+                
+                <div class="col-md">
+                    <h2 id="project_descriptions"><span class=text-primary>Features</span> and Highlights</h2>
+                    <ul>
+                        <li>Candlestick chart showing open, high, low, close values</li>
+                        <li>5, 15, 50, 200 standard moving averages</li>
+                        <li>Volume, RSI, and MACD indicators</li>
+                        <li>Support/Resistance value detection and plotting</li>
+                        <li>Interactive legend</li>
+
+                    </ul>
+
+                    <h2 id="project_descriptions"><span class=text-primary>Motivations</span> for project</h2>
+                    <p>
+                        To better visualize and analyze the trends and price movements of a particular stock, I wanted to make an application that would equip users with 
+                        the indicators and moving averages they'd need to implement some basic trading strategies. While trying to make sense of the market myself as a beginner,
+                        I found the UI and settings of some applications to be cumbersome or confusing, so I wanted to offer a more streamlined approach that is already preconfigured. 
+                        With that in mind, I set out on building and deploying a web application that would accomplish said tasks.
+                    </p>
+
+                <h2 id="project_descriptions"><span class=text-primary>What</span> I Learned</h2>
+                <p>While developing this stock application, I learned some really interesting things. I learned how to consume data from the yfinance API that pulls its data from the 
+                   Yahoo! Finance website. I also got experience with using the built-in functions to plot the interactive candlestick chart using the Plotly graphing library. From there,
+                   I learned how to plot multiple subplots on a single page instead of relying on just the single candlestick chart. I chose to make a MACD(Moving Average Cross Divergence) subplot, a volume
+                   subplot, and also an RSI(Relative Strength Index) subplot. I came across a few different ways of calculating the RSI and MACD values, and decided to use the <a href="https://technical-analysis-library-in-python.readthedocs.io/en/latest/#" 
+                   target="_blank" rel="noopener noreferrer">Technical Analysis library</a> to derive the values I needed. Using the Dash framework, I learned how to use a callback function to change the value of the stock choice used to output the graphs, indicators, 
+                   and the support and resistance values. Finally, I deployed the working application using Amazon AWS Elastic Beanstalk and Github for version control. While deploying the application, I also had to add a configuration file for the load balancer
+                   in order to install an SSL certificate.
+                </p>
+                </div>
+                
+            </div>
+        </div>
+
+    </section>
+
+
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+        crossorigin="anonymous"></script>
+
+    </body>
+    </html>
