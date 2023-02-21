@@ -1,5 +1,6 @@
 #profile_pic {
     border-radius:50%;
+    transition-duration: 1s;
 }
 
 #section_title {
@@ -34,22 +35,8 @@
     justify-content:center;
 }
 
-
 .card{
-    height:100%; 
-  }
-
-#image_right
-  {
-    float:right;
-    max-height:auto;
-    max-width:70%;
-  }
-
-  #image_right_stockdash {
-    float:right;
-    max-height:auto;
-    max-width:75%;
+    height: 100%;
   }
 
 #border {
@@ -72,9 +59,47 @@ hr {
     padding:0;
 }
 
-#project_picture_resize {
+#bugtracker_picture {
+  max-width: 75%;
+  max-height: auto;
+  transition-duration: 1s;
+}
+
+#bugtracker_picture:hover {
+  max-width: 80%;
+}
+
+#malware_picture {
   max-height:auto;
   max-width:65%;
+  transition-duration: 1s;
+}
+
+#malware_picture:hover {
+  max-height: auto;
+  max-width: 70%;
+}
+
+#stockdash_picture {
+  float:right;
+  max-height:auto;
+  max-width:75%;
+  transition-duration: 1s;
+}
+
+#stockdash_picture:hover {
+  max-width: 80%;
+}
+
+#horoscope_picture {
+    float:right;
+    max-height:auto;
+    max-width:70%;
+    transition-duration: 1s;
+  }
+
+#horoscope_picture:hover {
+  max-width: 75%;
 }
 
 p {
@@ -88,3 +113,13 @@ li {
 .card-text {
   color: rgb(223, 229, 236);
 }
+
+#dark_container {
+  background-color: #6c757d;
+  transition-duration: 1s;
+}
+
+#dark_container:hover {
+  background-color: #343a40;
+}
+
