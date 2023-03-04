@@ -94,12 +94,12 @@ hr {
 #horoscope_picture {
     float:right;
     max-height:auto;
-    max-width:70%;
+    max-width:75%;
     transition-duration: 1s;
   }
 
 #horoscope_picture:hover {
-  max-width: 75%;
+  max-width: 80%;
 }
 
 p {
