@@ -3,20 +3,17 @@
 <head>
     <!--https://undraw.co/illustrations
         illustrations-->
-<meta charset=""UTF-8">
-<meta http-equiv=""X-UA-Compatible" content="IE=edge, chrome=1">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 <meta name="viewport" content="width=devide-width, initial-scale=1.0">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
 rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
  crossorigin="anonymous">
 <link rel="stylesheet" href="style.css">
-
-
 <title>Justin's Web Portfolio</title>
-
 </head>
-<body>
 
+<body>
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
     <div class="container">
@@ -26,8 +23,7 @@ rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3
         data-bs-toggle="collapse" 
         data-bs-target="#navmenu">
         <span class="navbar-toggler-icon"></span>
-    </button>
-
+        </button>
         <div class="collapse navbar-collapse" id="navmenu">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
@@ -48,7 +44,7 @@ rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3
 <section class="bg-dark text-light p-4 text-center text-sm-start">
     <div class="container">
         <div class="d-sm-flex align-items-center justify-content-between">
-            <div class="py-5">
+            <div class="col-md-8 py-5">
                 <h1><span class="text-primary">Python </span>Stock Dashboard</h1>
                 <p class="lead my-4">
                     This project was made using Python, Plotly and Dash, and the yfinance api. My goal was to make a simple dashboard application that 
@@ -64,14 +60,10 @@ rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3
                 rel="noopener noreferrer">
                     Click here for code
                 </a>
-                
-
-                
             </div>
-            <img class="img-fluid w-25 d-none d-sm-block" 
-            src="images/programming.svg" 
-            alt="programming picture" 
-            >
+            <div class-="col-md-4">
+                <img class="img-fluid d-none d-sm-block" id="stockdash_picture" src="images/dashboard.svg" alt="stock dashboard picture">
+            </div>
         </div>
     </div>
     </section>
@@ -89,7 +81,6 @@ rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3
 
     <!--Project information-->
     <section class="p-5 bg-dark text-light">
-        
         <div class="container">
             <div class="d-sm-flex row align-items-center justify-content-between">
                 
@@ -101,9 +92,7 @@ rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3
                         <li>Volume, RSI, and MACD indicators</li>
                         <li>Support/Resistance value detection and plotting</li>
                         <li>Interactive legend</li>
-
                     </ul>
-
                     <h2 id="project_descriptions"><span class=text-primary>Motivations</span> for project</h2>
                     <p>
                         To better visualize and analyze the trends and price movements of a particular stock, I wanted to make an application that would equip users with 
@@ -111,7 +100,6 @@ rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3
                         I found the UI and settings of some applications to be cumbersome or confusing, so I wanted to offer a more streamlined approach that is already preconfigured. 
                         With that in mind, I set out on building and deploying a web application that would accomplish said tasks.
                     </p>
-
                 <h2 id="project_descriptions"><span class=text-primary>What</span> I Learned</h2>
                 <p>While developing this stock application, I learned some really interesting things. I learned how to consume data from the yfinance API that pulls its data from the 
                    Yahoo! Finance website. I also got experience with using the built-in functions to plot the interactive candlestick chart using the Plotly graphing library. From there,
