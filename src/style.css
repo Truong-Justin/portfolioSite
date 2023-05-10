@@ -123,4 +123,23 @@ li {
   background-color: #343a40;
 }
 
+#webAppPic {
+  bottom:1px;
+  position:relative;
+  width:19px;
+  height:19px;
+}
 
+#apiLogo {
+  bottom:2px;
+  position:relative;
+  width:20px;
+  height:20px;
+}
+
+#githubLogo {
+  bottom:1px;
+  position:relative;
+  width:23px;
+  height:23px;
+}
