@@ -50,13 +50,21 @@
     border-radius:4px;
   }
 
-hr {
+#hr_dark_background {
     display:block;
     height:1px;
     border:0;
     border-top:1px solid #e5e3e3;
     margin:1em 0;
     padding:0;
+}
+
+#hr_light_background {
+  display:block;
+  height:3px;
+  border-top:1px solid #e5e3e3;
+  margin:1em 0;
+  max-width: 100%;
 }
 
 #bugtracker_picture {
