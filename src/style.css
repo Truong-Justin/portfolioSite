@@ -67,25 +67,37 @@
   max-width: 100%;
 }
 
+#project-management-picture {
+  max-width:75%;
+  max-height:auto;
+  float:right;
+  transition-duration:1s;
+
+}
+
+#project-management-picture:hover {
+  max-width:80%;
+}
+
 #bugtracker_picture {
-  max-width: 75%;
-  max-height: auto;
-  transition-duration: 1s;
+  max-width:75%;
+  max-height:auto;
+  transition-duration:1s;
 }
 
 #bugtracker_picture:hover {
-  max-width: 80%;
+  max-width:80%;
 }
 
 #malware_picture {
   max-height:auto;
   max-width:65%;
-  transition-duration: 1s;
+  transition-duration:1s;
 }
 
 #malware_picture:hover {
-  max-height: auto;
-  max-width: 70%;
+  max-height:auto;
+  max-width:70%;
 }
 
 #stockdash_picture {
@@ -96,7 +108,7 @@
 }
 
 #stockdash_picture:hover {
-  max-width: 80%;
+  max-width:80%;
 }
 
 #horoscope_picture {
@@ -107,28 +119,28 @@
   }
 
 #horoscope_picture:hover {
-  max-width: 80%;
+  max-width:80%;
 }
 
 p {
-  color: rgb(197, 197, 198);
+  color:rgb(197, 197, 198);
 }
 
 li {
-  color: rgb(197, 197, 198);
+  color:rgb(197, 197, 198);
 }
 
 .card-text {
-  color: rgb(223, 229, 236);
+  color:rgb(223, 229, 236);
 }
 
 #dark_container {
-  background-color: #6c757d;
+  background-color:#6c757d;
   transition-duration: 1s;
 }
 
 #dark_container:hover {
-  background-color: #343a40;
+  background-color:#343a40;
 }
 
 #webAppPic {
