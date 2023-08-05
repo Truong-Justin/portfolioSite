@@ -40,8 +40,8 @@
                 <div class="col-md-8 py-5">
                     <h1 id="project_titles"><span class="text-warning">Project </span>Management REST API</h1>
                     <p class="lead mb-4 mt-2">
-                        This project was made to get exposed to working with controllers and the ASP.NET Core Web API framework. While developing this API, I also got a chance to implement the Repository design pattern so that the data-access logic
-                        would be separated from the business-logic. I also got to make use of interfaces that are dependency-injected into it's associated controller class. To learn more about the project's features and challenges, scroll-down to read more!
+                        This project was made to get hands-on experience with developing a <span id="project_titles">REST API using C# and the ASP.NET Core Web API framework</span>. While developing this API, I also got a chance to implement the <span class="text-warning">Repository design pattern</span> so that the data-access logic
+                        would be separated from the business-logic. Each repository class interface is dependency injected into it's associated controller class, so that the services are avaiable to the entire controller. The application uses <span id="project_titles">Azure SQL Database</span>, a platform-as-a-service (PaaS) that utilizes the <span id="project_titles">Microsoft SQL Server database engine</span> and hosts the database on Azure. To learn more about the project's features and challenges, scroll-down to read more!
                     </p>
                     <a href="https://projectsmanagementapi.azurewebsites.net/swagger/index.html" class="btn btn-warning btn-md" target="_blank" 
                         rel="noopener noreferrer">
@@ -106,8 +106,12 @@
                         </p>
                         <h2 id="project_descriptions"><span class=text-warning>What</span> I learned</h2>
                         <p>
-                            While developing this application, I got hands-on experience with how to use controllers. While writing the data-access methods for each entity, I also got to learn how to write them asynchronously so that each task wouldn't block eachother as the async methods were executing. Finally, I learned how to use a constructor
+                            While developing this application, I got hands-on experience with how to use controllers. While writing the data-access methods for each entity, I also got to learn how to write them asynchronously so that each task wouldn't block each other as the async methods were executing. Finally, I learned how to use a constructor
                             for each controller class, that used the interface associated with each entity's data-access class so that the associated data-access logic could be used through dependency-injection. This was done to allow for loose coupling and the ability to swap out data-access implementations without having to refactor a significant chunk of the codebase. 
+                        </p>
+                        <p class="mt-4">
+                            When designing the tables for the database, I made use of constraints such as <span class="text-warning">"ON DELETE SET NULL"</span> and <span class="text-warning">"ON DELETE CASCADE"</span>. I used these constraints to ensure that when a project is deleted, all bug records associated with that project would also be deleted; when a project is deleted, the employee assigned to it is also unassigned from the project since
+                            it no longer exists. Since the employees are now unassigned, the project manager can now reassign these employees to projects that may need them. Since bugs are usually unique to each piece of software or project, it didn't make sense for them to still exist when a project was deleted so they are deleted along with the project they belonged to. 
                         </p>
                     </div>
                 </div>
