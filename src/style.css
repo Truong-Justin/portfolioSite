@@ -1,12 +1,10 @@
 #profile_pic {
     border-radius:50%;
-    transition-duration: 1s;
 }
 
 #section_title {
     text-decoration:underline;
     margin-top:100px;
-    
 }
 
 #section_keywords {
