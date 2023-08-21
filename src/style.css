@@ -1,36 +1,28 @@
-#profile_pic {
-    border-radius:50%;
+#profile-picture {
+    border-radius: 50%;
+    width: 75%;
 }
 
-#section_title {
-    text-decoration:underline;
-    margin-top:100px;
+#section-keywords {
+    text-decoration: underline;
+    font-weight: bold;
 }
 
-#section_keywords {
-    text-decoration:underline;
-    font-weight:bold;
-}
-
-#project_titles {
-    text-decoration:underline;
-    text-decoration-color:slategray;
+#project-titles {
+    text-decoration: underline;
+    text-decoration-color: slategray;
     
 }
 
-#project_descriptions {
-    margin-top:50px;
+#project-descriptions {
+    margin-top: 50px;
     text-decoration-line:underline;
     text-decoration-color:slategray;
 }
 
-#paragraph_spacing {
-    margin-top:25px;
-}
-
-#center_image {
-    display:flex;
-    justify-content:center;
+#center-image {
+    display: flex;
+    justify-content: center;
 }
 
 .card{
@@ -38,26 +30,22 @@
   }
 
 #border {
-    border-width:4px;
-    border-radius:10px;
-    border-style:solid;
-    border-color:black;
+    border-width: 4px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
   }
 
-#round_div {
-    border-radius:4px;
-  }
-
-#hr_dark_background {
-    display:block;
-    height:1px;
-    border:0;
-    border-top:1px solid #e5e3e3;
-    margin:1em 0;
-    padding:0;
+#hr-dark-background {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #e5e3e3;
+    margin: 1em 0;
+    padding: 0;
 }
 
-#hr_light_background {
+#hr-light-background {
   display:block;
   height:3px;
   border-top:1px solid #e5e3e3;
@@ -66,98 +54,141 @@
 }
 
 #project-management-picture {
-  max-width:75%;
-  max-height:auto;
-  float:right;
-  transition-duration:1s;
-
-}
-
-#project-management-picture:hover {
-  max-width:80%;
-}
-
-#bugtracker_picture {
-  max-width:75%;
-  max-height:auto;
-  transition-duration:1s;
-}
-
-#bugtracker_picture:hover {
-  max-width:80%;
-}
-
-#malware_picture {
-  max-height:auto;
-  max-width:65%;
-  transition-duration:1s;
-}
-
-#malware_picture:hover {
-  max-height:auto;
-  max-width:70%;
-}
-
-#stockdash_picture {
-  float:right;
-  max-height:auto;
-  max-width:75%;
+  max-width: 75%;
+  max-height: auto;
+  float: right;
   transition-duration: 1s;
 }
 
-#stockdash_picture:hover {
-  max-width:80%;
+#parent-section-project-management:hover #project-management-picture {
+  max-width: 83%;
 }
 
-#horoscope_picture {
-    float:right;
-    max-height:auto;
-    max-width:75%;
-    transition-duration: 1s;
-  }
+#parent-section-project-management:hover #make-glow-project-management {
+  border-radius: 15%;
+  color: black;
+  background: silver;
+  box-shadow: 0 0 100px wheat;
+  transition-duration: .5s;
+}
 
-#horoscope_picture:hover {
-  max-width:80%;
+#bug-tracker-picture {
+  max-width: 75%;
+  max-height: auto;
+  transition-duration: 1s;
+}
+
+#parent-section-bug-tracker:hover #bug-tracker-picture {
+  max-width: 80%;
+}
+
+#parent-section-bug-tracker:hover #make-glow-bug-tracker {
+  border-radius: 15%;
+  color: black;
+  background: silver;
+  box-shadow: 0 0 100px wheat;
+  transition-duration: .5s;
+}
+
+#horoscope-picture {
+  float: right;
+  max-height: auto;
+  max-width: 75%;
+  transition-duration: 1s;
+}
+
+#parent-section-horoscope:hover #horoscope-picture{
+  max-width: 80%;
+}
+
+#parent-section-horoscope:hover #make-glow-horoscope {
+  border-radius: 20%;
+  color: black;
+  background: silver;
+  box-shadow: 0 0 100px wheat;
+  transition-duration: .5s;
+}
+
+#malware-picture {
+  max-height: auto;
+  max-width: 65%;
+  transition-duration: 1s;
+}
+
+#parent-section-malware-app:hover #malware-picture{
+  max-height: auto;
+  max-width: 70%;
+}
+
+#parent-section-malware-app:hover #make-glow-malware {
+  border-radius: 20%;
+  color: black;
+  background: silver;
+  box-shadow: 0 0 100px wheat;
+  transition-duration: .5s;
+}
+
+#stock-app-picture {
+  float: right;
+  max-height: auto;
+  max-width: 75%;
+  transition-duration: 1s;
+}
+
+#parent-section-stock-app:hover #stock-app-picture{
+  max-width: 80%;
+}
+
+#parent-section-stock-app:hover #make-glow-stock-app {
+  border-radius: 20%;
+  color: black;
+  background: silver;
+  box-shadow: 0 0 100px wheat;
+  transition-duration: 1s;
 }
 
 p {
-  color:rgb(197, 197, 198);
+  color: rgb(197, 197, 198);
 }
 
 li {
-  color:rgb(197, 197, 198);
+  color: rgb(197, 197, 198);
 }
 
 .card-text {
-  color:rgb(223, 229, 236);
+  color: rgb(223, 229, 236);
 }
 
-#dark_container {
-  background-color:#6c757d;
+#dark-card {
+  background-color: #6c757d;
   transition-duration: 1s;
 }
 
-#dark_container:hover {
-  background-color:#343a40;
+#dark-card:hover {
+  background-color: #343a40;
 }
 
-#webAppPic {
-  bottom:1px;
-  position:relative;
-  width:19px;
-  height:19px;
+#dark-card:hover h3{
+  text-decoration-line: underline;
 }
 
-#apiLogo {
-  bottom:2px;
-  position:relative;
-  width:20px;
-  height:20px;
+#web-app-pic {
+  bottom: 1px;
+  position: relative;
+  width: 19px;
+  height: 19px;
 }
 
-#githubLogo {
-  bottom:1px;
-  position:relative;
-  width:23px;
-  height:23px;
+#api-logo {
+  bottom: 2px;
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+#github-logo {
+  bottom: 1px;
+  position: relative;
+  width: 23px;
+  height: 23px;
 }

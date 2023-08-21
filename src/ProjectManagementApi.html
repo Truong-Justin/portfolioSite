@@ -14,7 +14,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
         <div class="container">
-            <a href="index.html" class="navbar-brand">Web <span class="text-primary">Portfolio</span></a>
+            <a href="index.html" class="navbar-brand">Web <span class="text-warning">Portfolio</span></a>
             <button class="navbar-toggler" 
             type="button" 
             data-bs-toggle="collapse" 
@@ -34,18 +34,18 @@
         </div>
     </nav>
     <!--Showcase-->
-    <section class="bg-dark text-light p-4 text-center text-sm-start">
+    <section class="bg-dark text-light p-4 text-center text-sm-start" id="parent-section-project-management">
         <div class="container">
             <div class="d-sm-flex align-items-center justify-content-between">
                 <div class="col-md-8 py-5">
-                    <h1 id="project_titles"><span class="text-warning">Project </span>Management REST API</h1>
-                    <p class="lead mb-4 mt-2">
-                        This project was made to get hands-on experience with developing a <span id="project_titles">REST API using C# and the ASP.NET Core Web API framework</span>. While developing this API, I also got a chance to implement the <span class="text-warning">Repository design pattern</span> so that the data-access logic
-                        would be separated from the business-logic. Each repository class interface is dependency injected into it's associated controller class, so that the services are avaiable to the entire controller. The application uses <span id="project_titles">Azure SQL Database</span>, a platform-as-a-service (PaaS) that utilizes the <span id="project_titles">Microsoft SQL Server database engine</span> and hosts the database on Azure. To learn more about the project's features and challenges, scroll-down to read more!
+                    <h1 id="project-titles"><span class="text-warning">Project </span>Management REST API</h1>
+                    <p class="lead mb-4 mt-2 me-4">
+                        This project was made to get hands-on experience with developing a <span id="project-titles">REST API using C# and the ASP.NET Core Web API framework</span>. While developing this API, I also got a chance to implement the <span class="text-warning">Repository design pattern</span> so that the data-access logic
+                        would be separated from the business-logic. Each repository class interface is dependency injected into it's associated controller class, so that the services are avaiable to the entire controller. The application uses <span id="project-titles">Azure SQL Database</span>, a platform-as-a-service (PaaS) that utilizes the <span id="project-titles">Microsoft SQL Server database engine</span> and hosts the database on Azure. To learn more about the project's features and challenges, scroll-down to read more!
                     </p>
                     <a href="https://projectsmanagementapi.azurewebsites.net/swagger/index.html" class="btn btn-warning btn-md" target="_blank" 
                         rel="noopener noreferrer">
-                        <img src="images/webAppDark.png" id="webAppPic">
+                        <img src="images/webAppDark.png" id="web-app-pic">
                         Click here to demo
                     </a>
                     <a href="https://github.com/Truong-Justin/ProjectManagementAPI" class="btn btn-md btn-secondary" target="_blank" rel="noopener noreferrer">
@@ -55,8 +55,8 @@
                         GitHub
                     </a>
                 </div>
-                <div class="col-md-4">
-                    <img class="img-fluid d-none d-sm-block" id="project-management-picture" src="images/ProjectManagement.svg" alt="Bug picture" style="float:right">
+                <div class="col-md-4" id="make-glow-project-management">
+                    <img class="img-fluid d-none d-sm-block my-5 mx-5" id="project-management-picture" src="images/ProjectManagement.svg" alt="Bug picture" style="float:right">
                 </div>
             </div>
         </div>
@@ -66,24 +66,24 @@
             <div class="container">
                 <div class="d-sm-flex row align-items-center justify-content-between">
                     <div class="col-md">
-                        <h1 class="text-center mb-5" id="project_titles">Demo using Swagger UI</h1>
+                        <h1 class="text-center mb-5" id="project-titles">Demo using Swagger UI</h1>
                         <img src="images/AllApiMethods.png" class="img-fluid shadow my-5" alt="GetAllBugs picture">
                     </div>
                 </div>
             </div>
             <hr id="hr_light_background" />
-            <h1 class="text-center my-5" id="project_titles">Get All Bugs Method</h1>
-            <div id="center_image">
+            <h1 class="text-center my-5" id="project-titles">Get All Bugs Method</h1>
+            <div id="center-image">
                 <img src="images/GetAllBugs.png" class="img-fluid my-5 shadow">
             </div>
             <hr id="hr_light_background" />
-            <h1 class="text-center my-5" id="project_titles">Get Bug By Id Method</h1>
-                <div id="center_image">
+            <h1 class="text-center my-5" id="project-titles">Get Bug By Id Method</h1>
+                <div id="center-image">
             <img src="images/GetBugById.png" class="img-fluid my-5 shadow">
             </div>
             <hr id="hr_light_background" />
-            <h1 class="text-center my-5" id="project_titles">Delete Bug By Id Method</h1>
-                <div id="center_image">
+            <h1 class="text-center my-5" id="project-titles">Delete Bug By Id Method</h1>
+                <div id="center-image">
             <img src="images/DeleteBugById.png" class="img-fluid my-5 shadow">
             </div>
         </section>
@@ -92,7 +92,7 @@
             <div class="container">
                 <div class="d-sm-flex row align-items-center justify-content-between">
                     <div class="col-md">
-                        <h2 id="project_descriptions"><span class=text-warning>Features</span> and highlights</h2>
+                        <h2 id="project-descriptions"><span class=text-warning>Features</span> and highlights</h2>
                         <ul>
                             <li>Allows a user to perform <span class="text-warning" style="text-decoration-line: underline;">CRUD operations</span> on a Microsft SQL Server database</li>
                             <li>Demonstrates the <span class="text-warning" style="text-decoration-line: underline;">Repository design pattern</span> that isolates the data-layer from the rest of the application</li>
@@ -100,11 +100,11 @@
                             <li>Uses an interface to define each entity repository with all logical read and write operations specific to the entity</li>
                             <li><span class="text-warning" style="text-decoration-line: underline;">Microsoft SQL Server</span> and <span class="text-warning" style="text-decoration-line: underline;">Azure SQL</span> was used as the database and hosting environment</li>
                         </ul>
-                        <h2 id="project_descriptions"><span class=text-warning>Motivations</span> for project</h2>
+                        <h2 id="project-descriptions"><span class=text-warning>Motivations</span> for project</h2>
                         <p>
                             I wanted to learn how to design and implement a REST API from the ground-up using C# and the ASP.NET Core Web API framework. I plan to make a full-stack Project Management application that will use this API to access and manipulate the necessary data using ASP.NET Core MVC that will utilize a React front-end. 
                         </p>
-                        <h2 id="project_descriptions"><span class=text-warning>What</span> I learned</h2>
+                        <h2 id="project-descriptions"><span class=text-warning>What</span> I learned</h2>
                         <p>
                             While developing this application, I got hands-on experience with how to use controllers. While writing the data-access methods for each entity, I also got to learn how to write them asynchronously so that each task wouldn't block each other as the async methods were executing. Finally, I learned how to use a constructor
                             for each controller class, that used the interface associated with each entity's data-access class so that the associated data-access logic could be used through dependency-injection. This was done to allow for loose coupling and the ability to swap out data-access implementations without having to refactor a significant chunk of the codebase. 

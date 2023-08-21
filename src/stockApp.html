@@ -36,20 +36,20 @@
     </div>
 </nav>
 <!--Showcase-->
-<section class="bg-dark text-light p-4 text-center text-sm-start">
+<section class="bg-dark text-light p-4 text-center text-sm-start" id="parent-section-stock-app">
     <div class="container">
         <div class="d-sm-flex align-items-center justify-content-between">
             <div class="col-md-8 py-5">
-                <h1 id="project_titles"><span class="text-primary">Python </span>Stock Dashboard</h1>
-                <p class="lead mb-4 mt-2">
+                <h1 id="project-titles"><span class="text-primary">Python </span>Stock Dashboard</h1>
+                <p class="lead mb-4 mt-2 me-3">
                     This project was made using Python, Plotly and Dash, and the yfinance api. My goal was to make a simple dashboard application that 
                     would output a candlestick chart, standard moving averages, and some commonly used indicators below the main plots. The legend is interactive
                     and displays the 5, 15, 50, and 200 day moving averages along with support and resistance levels when the user clicks on them. Fibonnaci retracement is used to find the 
-                    support and resistance levels. The application itself is hosted on <span class="text-warning" style=text-decoration-line:underline>Amazon AWS Beanstalk</span>. Click the button below to see it in action!
+                    support and resistance levels. The application itself is hosted on <span class="text-primary" style=text-decoration-line:underline>Amazon AWS Beanstalk</span>. Click the button below to see it in action!
                 </p>
                 <a href="https://stockdash.justintruong.studio" class="btn btn-primary btn-md" target="_blank" 
                     rel="noopener noreferrer">
-                    <img src="images/webApp.png" id="webAppPic">
+                    <img src="images/webApp.png" id="web-app-pic">
                     Click here to demo
                 </a>
                 <a href="https://github.com/Truong-Justin/dash-app-stock" class="btn btn-secondary btn-md my-4" target="_blank" 
@@ -60,8 +60,8 @@
                         GitHub
                 </a>
             </div>
-            <div class-="col-md-4">
-                <img class="img-fluid d-none d-sm-block" id="stockdash_picture" src="images/dashboard.svg" alt="stock dashboard picture">
+            <div class-="col-md-4" id="make-glow-stock-app">
+                <img class="img-fluid d-none d-sm-block my-5 mx-3" id="stock-app-picture" src="images/dashboard.svg" alt="stock dashboard picture">
             </div>
         </div>
     </div>
@@ -82,7 +82,7 @@
             <div class="d-sm-flex row align-items-center justify-content-between">
                 
                 <div class="col-md">
-                    <h2 id="project_descriptions"><span class=text-primary>Features</span> and highlights</h2>
+                    <h2 id="project-descriptions"><span class=text-primary>Features</span> and highlights</h2>
                     <ul>
                         <li>Candlestick chart showing open, high, low, close values</li>
                         <li>5, 15, 50, 200 standard moving averages</li>
@@ -90,14 +90,14 @@
                         <li>Support/Resistance value detection and plotting</li>
                         <li>Interactive legend</li>
                     </ul>
-                    <h2 id="project_descriptions"><span class=text-primary>Motivations</span> for project</h2>
+                    <h2 id="project-descriptions"><span class=text-primary>Motivations</span> for project</h2>
                     <p>
                         To better visualize and analyze the trends and price movements of a particular stock, I wanted to make an application that would equip users with 
                         the indicators and moving averages they'd need to implement some basic trading strategies. While trying to make sense of the market myself as a beginner,
                         I found the UI and settings of some applications to be cumbersome or confusing, so I wanted to offer a more streamlined approach that is already preconfigured. 
                         With that in mind, I set out on building and deploying a web application that would accomplish said tasks.
                     </p>
-                <h2 id="project_descriptions"><span class=text-primary>What</span> I learned</h2>
+                <h2 id="project-descriptions"><span class=text-primary>What</span> I learned</h2>
                 <p>While developing this stock application, I learned some really interesting things. I learned how to consume data from the yfinance API that pulls its data from the 
                    Yahoo! Finance website. I also got experience with using the built-in functions to plot the interactive candlestick chart using the Plotly graphing library. From there,
                    I learned how to plot multiple subplots on a single page instead of relying on just the single candlestick chart. I chose to make a MACD(Moving Average Cross Divergence) subplot, a volume

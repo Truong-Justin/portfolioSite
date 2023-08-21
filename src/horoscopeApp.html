@@ -31,42 +31,40 @@
             </div>
         </div>
     </nav>
-
     <!--Showcase-->
-    <section class="bg-dark text-light p-4 text-center text-sm-start">
+    <section class="bg-dark text-light p-4 text-center text-sm-start" id="parent-section-horoscope">
         <div class="container">
             <div class="d-sm-flex align-items-center justify-content-between">
                 <div class="cold-md-8 py-5">
-                    <h1 id="project_titles"><span class="text-warning">Horoscope </span>Web App</h1>
-                    <p class="lead mb-4 mt-2">
+                    <h1 id="project-titles"><span class="text-warning">Horoscope </span>Web App</h1>
+                    <p class="lead mb-4 mt-2 me-3">
                         This application returns a person's horoscope based on their sign and consists of two components. The first is a REST API made with Python, Flask-Restx, and the Beautiful Soup library that scrapes the www.horoscope.com website 
                         for horoscope data and returns it in JSON format. The second component is a front-end made using HTML/CSS and JavaScript & React that calls the REST API and outputs the horoscope to the user asynchronously. 
                 </p>
                     </p>
                     <a href="https://horoscopeapp.justintruong.studio" class="btn btn-warning btn-md" target="_blank" 
                     rel="noopener noreferrer">
-                    <img src="images/webAppDark.png" id="webAppPic">
+                    <img src="images/webAppDark.png" id="web-app-pic">
                         Click here to demo
                     </a>
                     <a href="https://github.com/Truong-Justin/horoscopeApi" class="btn btn-secondary btn-md my-1" target="_blank" 
                         rel="noopener noreferrer">
-                        <img src="images/apiLogo.png" id="apiLogo">
+                        <img src="images/apiLogo.png" id="api-logo">
                         API GitHub
                     </a>
                     <a href="https://github.com/Truong-Justin/HoroscopeFrontEnd" class="btn btn-light btn-md my-4" target="_blank" 
                     rel="noopener noreferrer">
-                    <img src="images/githubDark.png" id="githubLogo">
+                    <img src="images/githubDark.png" id="github-logo">
                         App Github
                     </a>
                     
                 </div>
-                <div class="col-md-4">
-                    <img class="img-fluid d-none d-sm-block" src="images/horoscope.svg" alt="horoscope image" id="horoscope_picture">
+                <div class="col-md-4" id="make-glow-horoscope">
+                    <img class="img-fluid d-none d-sm-block my-3 mx-3" src="images/horoscope.svg" alt="horoscope image" id="horoscope-picture">
                 </div>
             </div>
         </div>
         </section>
-
     <!--Example picture of stock app-->
         <section class="p-5 bg">
             <div class="container">
@@ -84,24 +82,26 @@
                 <div class="d-sm-flex row align-items-center justify-content-between">
                     
                     <div class="col-md">
-                        <h2 id="project_descriptions"><span class=text-warning>Features</span> and highlights</h2>
+                        <h2 id="project-descriptions"><span class=text-warning>Features</span> and highlights</h2>
                         <ul>
                             <li>Back-end scrapes data from  www.horoscope.com and returns the horoscope data</li>
-                            <li>Front-end displays horoscope based on zodiac sign/animal and chosen timeframe</li>
+                            <li>Front-end displays horoscope based on zodiac sign/animal and chosen timeframe and uses the React library</li>
                             <li>Horoscope data is viewable by user without the need for a database</li>
+                            <li>Front-end is hosted on Azure App Service, while the back-end API is hosted on Digital Ocean</li>
                             <li>The application supports both a desktop and mobile view</li>
     
                         </ul>
-                        <h2 id="project_descriptions"><span class=text-warning>Goals</span> for project</h2>
+                        <h2 id="project-descriptions"><span class=text-warning>Goals</span> for project</h2>
                         <p>
                             Webscraping and APIs have been two domains that I've been curious about and wanted to dive into for a project. Python's BeautifulSoup and Flask libraries made the process easy to understand
                             for the API portion of this project. I also wanted to further develop my front-end and JavaScript skills and used this project as an opportunity to do so. 
-                            To process the API endpoints, I used JavaScript and the React library to fetch from the API and update the page with the user's horoscope asynchronously.
+                            To process the API endpoints, I used JavaScript and the React library to fetch from the API and update the page with the user's horoscope asynchronously using an async function and the await keyword. 
+                            This is accomplished by setting the state of the horoscope state object every time the "Show Horoscope" button is pressed with the user's horoscope data. 
                         </p>
-                    <h2 id="project_descriptions"><span class=text-warning>What</span> I learned</h2>
+                    <h2 id="project-descriptions"><span class=text-warning>What</span> I learned</h2>
                      <p>While working on this project I learned: how to use the Beautiful Soup library to scrape data from the horoscope website, how to use Flask-Restx to 
-                        return the horoscope data in a JSON format, and how to access the data via the API endpoints using JavaScript. I also got a chance to utilize the React framework 
-                         to create the components for the UI.
+                        return the horoscope data in a JSON format, and how to access the data via the API endpoints using the built-in JavaScript fetch API and the React library. While working with React, I got exposure to using the 
+                        useState hook for state management and how to create functional components that returned JSX code to render to the DOM tree.
                     </p>
                     </div>
                 </div>
