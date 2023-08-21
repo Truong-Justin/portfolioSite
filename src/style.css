@@ -1,48 +1,48 @@
 #profile-picture {
-    border-radius: 50%;
-    width: 75%;
+  border-radius: 50%;
+  width: 75%;
 }
 
 #section-keywords {
-    text-decoration: underline;
-    font-weight: bold;
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 #project-titles {
-    text-decoration: underline;
-    text-decoration-color: slategray;
+  text-decoration: underline;
+  text-decoration-color: slategray;
     
 }
 
 #project-descriptions {
-    margin-top: 50px;
-    text-decoration-line:underline;
-    text-decoration-color:slategray;
+  margin-top: 50px;
+  text-decoration-line:underline;
+  text-decoration-color:slategray;
 }
 
 #center-image {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .card{
-    height: 100%;
+  height: 100%;
   }
 
 #border {
-    border-width: 4px;
-    border-radius: 10px;
-    border-style: solid;
-    border-color: black;
+  border-width: 4px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: black;
   }
 
 #hr-dark-background {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #e5e3e3;
-    margin: 1em 0;
-    padding: 0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #e5e3e3;
+  margin: 1em 0;
+  padding: 0;
 }
 
 #hr-light-background {
@@ -146,6 +146,8 @@
   box-shadow: 0 0 100px wheat;
   transition-duration: 1s;
 }
+
+
 
 p {
   color: rgb(197, 197, 198);
