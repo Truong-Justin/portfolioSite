@@ -53,6 +53,16 @@
   max-width: 100%;
 }
 
+#parent-section-index {
+  color: rgb(197, 197, 198);
+  will-change: transform;
+}
+
+#parent-section-index:hover h1 {
+  text-shadow: 0 0 7px rgb(74, 162, 192), 0 0 122px rgb(163, 165, 163);
+  transition-duration: 1s;
+}
+
 #project-management-picture {
   max-width: 75%;
   max-height: auto;
