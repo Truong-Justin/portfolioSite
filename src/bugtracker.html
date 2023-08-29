@@ -40,7 +40,7 @@
                 <div class="col-md-8 py-5">
                     <h1 id="project-titles"><span class="text-primary">Bug </span>Tracker App</h1>
                     <p class="lead mb-4 mt-2 me-3">
-                        This project was made using C# and ASP.Net Core Razor Pages, HTML/CSS, and a SQLite database. This full-stack application lets a user
+                        This project was made using C# and ASP.Net Core Razor Pages, HTML/CSS, and a Microsoft SQL Server database. This full-stack application lets a user
                         create, read, update, and delete from the SQLite database. In class we were shown how to make a web application using ASP.NET 4.7, an older version of the current ASP.NET.
                         So, in an effort to stay current with the technology currently being used, I decided to create this <span class="text-primary" style="text-decoration-line: underline;">Bug Tracker App</span>. 
                     </p>
@@ -90,7 +90,7 @@
                             <li>Responsive web design that features a usable UI for both mobile and desktop views</li>
                             <li><span class="text-primary" style="text-decoration-line: underline;">ADO.NET</span> is used for data access in order to understand how an ORM Framework like Entity works</li>
                             <li>Razor Pages and Razor syntax was used in order to understand and implement the <span class="text-primary" style="text-decoration-line: underline;">MVVM</span> pattern</li>
-                            <li><span class="text-primary">SQLite</span> and <span class="text-primary" style="text-decoration-line: underline;">Write-Ahead-Logging</span> was used to allow concurrent read/write access</li>
+                            <li><span class="text-primary">Microsoft SQL Server</span> and <span class="text-primary" style="text-decoration-line: underline;">Azure SQL</span> were used to create and host the database</li>
                         </ul>
                         <h2 id="project-descriptions"><span class=text-primary>Motivations</span> for project</h2>
                         <p>
@@ -101,12 +101,12 @@
                         <h2 id="project-descriptions"><span class=text-primary>What</span> I learned</h2>
                         <p>
                             While developing and debugging this project, there were numerous occassions where the database would lock-up when deployed preventing write-access. I discovered that this is a pitfall of SQLite as it doesn't support concurrent read/write access, but I also discovered that using Write-Ahead Logging
-                            could be used to bypass the issue allowing multiple transactions even when the database connection was busy. Working with ASP.NET Core Razor Pages introduced me to the Model-View-ViewModel approach, where I got a better grasp of how to transfer back-end data to the user-facing UI. Finally, I got to practice
+                            could be used to bypass the issue allowing multiple transactions even when the database connection was busy. Now, a Microsoft SQL Server database has been implemented to replace the SQLite database that was used previously. Working with ASP.NET Core Razor Pages introduced me to the Model-View-ViewModel approach, where I got a better grasp of how to transfer back-end data to the user-facing UI. Finally, I got to practice
                             my front-end skills with those project, and picked up some new concepts along the way like using CSS Flex Box Containers, what the CSS Grid Layout was, and when to use either one. 
                         </p>
                         <h2 id="project-descriptions"><span class=text-primary>Planned</span> additions</h2>
                         <ol>
-                            <button class="mt-5 mb-3 btn btn-sm btn-success">Completed</button>
+                            <button class="mt-3 mb-3 btn btn-sm btn-success">Completed</button>
                             <li>I am currently in the process of expanding the number of tables/entities to include tables for:</li>
                             <ul class="mb-5">
                                 <li>Project Managers that would lead the project</li>
@@ -115,9 +115,9 @@
                             </ul>
                             <p class="mb-5">These entities and their associated data access classes will be inherited from abstract classes to support code-reusability and method overloading. This design choice will also be my attempt to include high extensibility, high cohesion, and low coupling. I want to implement these design features so that when 
                                 new additions/features are added, major refactoring of the codebase or changes to the underlying architecture won't be necessary.</p>
+                                <li class="mb-5">Currently, a SQLite database is being used because it is supported on Windows, MacOS, and Linux. A goal for this project is to keep it OS/platform independent, but I do want to replace the SQLite database with Microsoft SQL Server to better align with the current tech stack used by Microsoft/.NET developers. To accomplish 
+                                    this, I intend to use Azure SQL to host and manage a cloud based SQL Server database</li>
                             <button class="mt-3 mb-3 btn btn-sm btn-warning">In-Progress</button>
-                            <li class="mb-5">Currently, a SQLite database is being used because it is supported on Windows, MacOS, and Linux. A goal for this project is to keep it OS/platform independent, but I do want to replace the SQLite database with Microsoft SQL Server to better align with the current tech stack used by Microsoft/.NET developers. To accomplish 
-                                this, I intend to use Azure SQL to host and manage a cloud based SQL Server database</li>
                             <li>As this project is also an application with a focus on UI/UX design, I would like to change the way records are shown to the user when a report is outputted. The information of each database record is placed within a container that is shaped like a long horizontal row. Instead of this design, I would like to implement an interface that will have three vertical sections:</li>
                             <ul class="mb-5">
                                 <li>Projects that aren't being worked on yet || Projects that are currently being worked on || Projects that are finished.</li>
