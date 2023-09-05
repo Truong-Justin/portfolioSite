@@ -9,7 +9,6 @@
 }
 
 #project-titles {
-  text-decoration: underline;
   text-decoration-color: slategray;
     
 }
@@ -54,12 +53,13 @@
 }
 
 #parent-section-index {
-  color: rgb(197, 197, 198);
+  color: rgb(227, 227, 231);
   will-change: transform;
 }
 
 #parent-section-index:hover h1 {
-  text-shadow: 0 0 7px rgb(74, 162, 192), 0 0 122px rgb(163, 165, 163);
+  text-decoration-line: underline;
+  text-decoration-color:slategray;
   transition-duration: 1s;
 }
 
@@ -156,8 +156,6 @@
   box-shadow: 0 0 100px wheat;
   transition-duration: 1s;
 }
-
-
 
 p {
   color: rgb(197, 197, 198);

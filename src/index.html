@@ -79,9 +79,9 @@
         </div>
     </div>
     </section>
-    <h1 class="text-center my-5" id="project-titles">Skills & Technologies</h1>
     <!--Boxes For Skills-->
-    <section class="p-5 mb-5">
+    <section class="p-5 mb-5" id="parent-section-index">
+        <h1 class="text-center my-5 text-dark" id="project-titles">Skills & Technologies</h1>
         <div class="container">
             <!--First Row-->
             <div class="row text-center">
@@ -152,7 +152,7 @@
                             </div>
                             <h3 class="card-title mb-3">Exposure To Different Programming Frameworks</h3>
                             <p class="card-text">
-                            .NET & ASP.NET, React, Dash, Flask, and Bootstrap 5 are some of the frameworks I have used to develop web applications.
+                            .NET/ASP.NET Core, React.js, Dash, and Flask are some of the frameworks I have used to develop web applications.
                             </p>
                         </div>
                     </div>
@@ -173,19 +173,19 @@
                 </div>
         </div>
     </section>
-    <section class="bg-dark">
+    <section class="bg-dark" id="parent-section-index">
         <!--Project Management API Section-->
         <section class="p-5 bg-dark" id="parent-section-project-management">
             <div class="container mb-3">
                 <div class="row align-items-center justify-content-between">
-                    <h1 class="text-center my-5 text-light" style="text-decoration-line:underline">Projects</h1>
+                    <h1 class="text-center my-5">Projects</h1>
                     <div class="col-md p-5">
                         <a href="ProjectManagementApi.html"><img src="images/ProjectManagement.svg" class="img-fluid d-sm-none mb-5" alt="project-management-api mobile"></a>
                         <h2 class="text-warning" id="project-titles">Project Management API</h2>
                         <p>
                             A REST API that lets a user perform CRUD operations on multiple entities such as: Projects, Bugs, Employees and Project Managers. This application 
                             was made using C# and ASP.NET Core Web API, and uses a Microsoft SQL Server database to store the tables and records of each entity. This project will  be part of a full-stack
-                            web application that will be made with ASP.NET Core MVC and have a React front-end component. 
+                            web application that will be made with ASP.NET Core MVC and utilize a React for the front-end.
                         </p>
                         <a href="ProjectManagementApi.html" class="btn btn-warning mt-3">
                             <i class="bi bi-chevron-right"></i> Read More
@@ -209,8 +209,8 @@
                     <div class="col-md p-5">
                         <h2 class="text-primary" id="project-titles">Bug Tracker App</h2>
                         <p>
-                            A full-stack CRUD web application that lets a user interact with the bugs, projects, employees, and project managers. This application is 
-                            built using C# and ASP.Net Core Razor Pages, Microsoft Sql Server, HTML/CSS, Bootstrap 5, and Microsoft Azure to host the application. This project utilizes the MVVM design
+                            A full-stack CRUD web application that lets a user interact with the bugs, projects, employees, and project managers of the organization. This application is 
+                            built using C# and ASP.Net Core Razor Pages, Microsoft SQL Server, HTML/CSS, Bootstrap 5, and Microsoft Azure to host the application. This project utilizes the MVVM design
                             pattern where the business-logic of each page is tightly-coupled with the associated view component. 
                         </p>
                         <a href="bugtracker.html" class="btn btn-primary mt-3">
@@ -218,8 +218,8 @@
                         </a>
                     </div>
                 </div>
-                <hr id="hr-dark-background"/>
             </div>
+            <hr id="hr-dark-background"/>
         </section>
         <!--Horoscope App Section-->
         <section class="p-5 bg-dark" id="parent-section-horoscope">
@@ -233,7 +233,8 @@
                             framework for the API, and JavaScript & React along with HTML/CSS and Bootstrap 5. 
                             The Python REST API returns a JSON object with the appropriate horoscope data. The React Web Application 
                             takes the user's horoscope sign and day, uses it to send a GET request to the correct API endpoint, and
-                            parses the JSON object for the necessary horoscope data. Finally, the user's horoscope is displayed to the user asynchronously. 
+                            parses the JSON object for the necessary horoscope data. Finally, the user's horoscope is displayed to the user asynchronously so that the entire page doesn't have to be re-rendered 
+                            each time a user selects a different sign and day.
                         </p>
                         <a href="horoscopeApp.html" class="btn btn-warning mt-3">
                             <i class="bi bi-chevron-right"></i> Read More
@@ -258,7 +259,7 @@
                         <div class="col-md p-5">
                             <h2 class="text-warning" id="project-titles">Malware Analyzer</h2>
                             <p>
-                                A group project made for my Senior Projects assignment. The application uses a machine learning algorithm that 
+                                A group project made for my Senior Projects class. The application uses a machine learning algorithm that 
                                 scans a file and predicts whether it's a virus or a safe file. The technologies used include Python, the Dash framework,
                                 and Digital Ocean to host the web application. My main jobs within the group was to integrate my group members code, build the 
                                 web application and UI, and create the documentation for the project such as the SRS, UML Class Diagram, and UML Flow Diagram. 
@@ -280,7 +281,7 @@
                         <h2 class="text-primary" id="project-titles">Python Stock App</h2>
                         <p>A Python stock app that collects stock data using the <span class="text-primary" id="section-keywords">yfinance api</span>, and displays the data using 
                             the <span class="text-primary" id="section-keywords">Plotly</span> graphing tool & the <span class="text-primary" id="section-keywords">Dash</span> framework. 
-                            Stock data is pulled from the Yahoo! Finance website using the api and stored within a pandas Dataframe. Plotly was used to make the main OHLC candlestick chart, 
+                            Stock data is pulled from the Yahoo! Finance website using the api and stored within a pandas dataframe. Plotly was used to make the main OHLC candlestick chart, 
                             along with the MACD and RSI subplots. I wanted to use Dash to learn how to build a dashboard using data that was collected.</p>
                         <a href="stockApp.html" class="btn btn-primary mt-3">
                             <i class="bi bi-chevron-right"></i> Read More
