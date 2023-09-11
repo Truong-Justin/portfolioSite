@@ -1,298 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/>
-    <link rel="stylesheet" href="style.css"/>
-    <title>Justin's Web Portfolio</title>
-</head>
-<body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
-        <div class="container">
-            <a href="index.html" class="navbar-brand">Web <span class="text-primary">Portfolio</span></a>
-            <button class="navbar-toggler" 
-            type="button" 
-            data-bs-toggle="collapse" 
-            data-bs-target="#navmenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-            <div class="collapse navbar-collapse" id="navmenu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="cv.html" class="nav-link">CV</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!--Showcase-->
-    <section class="bg-dark text-light p-4 text-center text-sm-start" id="parent-section-index">
-    <div class="container">
-        <div class="d-sm-flex align-items-center justify-content-between">
-            <img class="img-fluid d-sm-none" 
-                src="images/profile_picture.jpeg" 
-                alt="me" 
-                id="profile-picture">
-            <div class="py-5">
-                <h1>A Little Bit <span class="text-primary">About </span>Myself</h1>
-                <p class="lead mt-2 mb-4">
-                    Even before I got my first laptop, I have always had an insatiable curiosity about how computers, sofware, and technology worked. After I finished
-                    up my basic core curriculum at San Jacinto Community College, I decided to pursue my passion and enrolled at and graduated from the University of 
-                    Houston-Clear Lake with a Bachelors of Science in Computer Information Systems. Since then, I've been learning about: C# and 
-                    .NET/ASP.NET, JavaScript and React, how to design and implement both the back-end and front-end components of software, and how to work with cloud technologies like Azure, AWS, and Docker. 
-                    Below you'll find some more information about the skills I've acquired over the years, and also some of the projects I've developed while on my journey!
-                </p>
-                <div>
-                    <a href="https://github.com/Truong-Justin" class="btn btn-sm btn-secondary" target="_blank" rel="noopener noreferrer">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="18" fill="currentColor" class="bi bi-github align-top" viewBox="0 0 16 16">
-                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                        </svg>
-                        GitHub
-                    </a>
-                    <a href="https://www.linkedin.com/in/justin-truong-93bb97232/" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="18" fill="currentColor" class="bi bi-linkedin align-top" viewBox="0 0 16 16">
-                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-                        </svg>
-                        LinkedIn
-                    </a>
-                    <a href = "mailto: truongj1951@uhcl.edu" class="btn btn-sm btn-light" target="_blank" rel="noopener noreferrer">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="18" fill="currentColor" class="bi bi-envelope align-top" viewBox="0 0 16 16">
-                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
-                        </svg>
-                        Email
-                    </a>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/>
+        <link rel="stylesheet" href="style.css"/>
+        <title>Justin's Web Portfolio</title>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">Web <span class="text-primary">Portfolio</span></a>
+                <button class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navmenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="cv.html" class="nav-link">CV</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <img class="img-fluid d-none d-sm-block ms-5" 
-            src="images/profile_picture.jpeg" 
-            alt="me" 
-            id="profile-picture">
-        </div>
-    </div>
-    </section>
-    <!--Boxes For Skills-->
-    <section class="p-5 mb-5" id="parent-section-index">
-        <h1 class="text-center my-5 text-dark" id="project-titles">Skills & Technologies</h1>
-        <div class="container">
-            <!--First Row-->
-            <div class="row text-center">
-                <div class="col-md">
-                    <div class="card text-light shadow-lg" id="dark-card">
-                        <div class="card-body text-center">
-                            <div class="h1 mb-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-git" viewBox="0 0 16 16">
-                                    <path d="M15.698 7.287 8.712.302a1.03 1.03 0 0 0-1.457 0l-1.45 1.45 1.84 1.84a1.223 1.223 0 0 1 1.55 1.56l1.773 1.774a1.224 1.224 0 0 1 1.267 2.025 1.226 1.226 0 0 1-2.002-1.334L8.58 5.963v4.353a1.226 1.226 0 1 1-1.008-.036V5.887a1.226 1.226 0 0 1-.666-1.608L5.093 2.465l-4.79 4.79a1.03 1.03 0 0 0 0 1.457l6.986 6.986a1.03 1.03 0 0 0 1.457 0l6.953-6.953a1.031 1.031 0 0 0 0-1.457"/>
+        </nav>
+        <!--Showcase-->
+        <section class="bg-dark text-light p-4 text-center text-sm-start" id="parent-section-index">
+            <div class="container">
+                <div class="d-sm-flex align-items-center justify-content-between">
+                    <img class="img-fluid d-sm-none" 
+                        src="images/profile_picture.jpeg" 
+                        alt="me" 
+                        id="profile-picture">
+                    <div class="py-5">
+                        <h1>A Little Bit <span class="text-primary">About </span>Myself</h1>
+                        <p class="lead mt-2 mb-4">
+                            Even before I got my first laptop, I have always had an insatiable curiosity about how computers, sofware, and technology worked. After I finished
+                            up my basic core curriculum at San Jacinto Community College, I decided to pursue my passion and enrolled at and graduated from the University of 
+                            Houston-Clear Lake with a Bachelors of Science in Computer Information Systems. Since then, I've been learning about: C# and 
+                            .NET/ASP.NET, JavaScript and React, how to design and implement both the back-end and front-end components of software, and how to work with cloud technologies like Azure, AWS, and Docker. 
+                            Below you'll find some more information about the skills I've acquired over the years, and also some of the projects I've developed while on my journey!
+                        </p>
+                        <div>
+                            <a href="https://github.com/Truong-Justin" class="btn btn-sm btn-secondary" target="_blank" rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="18" fill="currentColor" class="bi bi-github align-top" viewBox="0 0 16 16">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
                                 </svg>
-                            </div>
-                            <h3 class="card-title mb-3">Git Version Control</h3>
-                            <p class="card-text mb-4">
-                            Utilized Git and GitHub for version control whilde developing projects; familiar with basic Git CLI commands such as git push, git pull, branch creation and merging.
-                            </p>
+                                GitHub
+                            </a>
+                            <a href="https://www.linkedin.com/in/justin-truong-93bb97232/" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="18" fill="currentColor" class="bi bi-linkedin align-top" viewBox="0 0 16 16">
+                                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                                </svg>
+                                LinkedIn
+                            </a>
+                            <a href = "mailto: truongj1951@uhcl.edu" class="btn btn-sm btn-light" target="_blank" rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="18" fill="currentColor" class="bi bi-envelope align-top" viewBox="0 0 16 16">
+                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                                </svg>
+                                Email
+                            </a>
                         </div>
                     </div>
-                </div>
-                <div class="col-md">
-                    <div class="card text-light shadow-lg" id="dark-card">
-                        <div class="card-body text-center">
-                            <div class="h1 mb-3">
-                                <i class="bi bi-cloud-download-fill"></i>
-                            </div>
-                            <h3 class="card-title mb-3">RDBMS/SQL Knowledge</h3>
-                            <p class="card-text">
-                            Experienced with database modeling techniques like ERDs and the physical implementation of the database,
-                            writing and executing SQL queries, and working with RDBMS like MySQL and Microsoft SQL Server.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="card text-light shadow-lg" id="dark-card">
-                        <div class="card-body text-center">
-                            <div class="h1 mb-3">
-                                <i class="bi bi-cpu-fill"></i>
-                            </div>
-                            <h3 class="card-title mb-3">OOP Principles</h3>
-                            <p class="card-text">
-                            Familiar with the concepts of Abstraction, Inheritance, Polymorphism, and Encapsulation and the roles they play in software development. 
-                            </p>
-                        </div>
-                    </div>
+                    <img class="img-fluid d-none d-sm-block ms-5" 
+                    src="images/profile_picture.jpeg" 
+                    alt="me" 
+                    id="profile-picture">
                 </div>
             </div>
-            <!--Second Row-->
-            <div class="row text-center my-4">
-                <div class="col-md">
-                    <div class="card text-light shadow-lg" id="dark-card">
-                        <div class="card-body text-center">
-                            <div class="h1 mb-3">
-                                <i class="bi bi-bug-fill"></i>
-                            </div>
-                            <h3 class="card-title mb-3">Debugging and Troubleshooting</h3>
-                            <p class="card-text">
-                            Experienced with troubleshooting and debugging code while working on personal projects
-                            & assignments.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md"> 
-                    <div class="card text-light shadow-lg" id="dark-card">
-                        <div class="card-body text-center">
-                            <div class="h1 mb-3">
-                                <i class="bi bi-laptop-fill"></i>
-                            </div>
-                            <h3 class="card-title mb-3">Exposure To Different Programming Frameworks</h3>
-                            <p class="card-text">
-                            .NET/ASP.NET Core, React.js, Dash, and Flask are some of the frameworks I have used to develop web applications.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="card text-light shadow-lg" id="dark-card">
-                        <div class="card-body text-center">
-                            <div class="h1 mb-3">
-                                <i class="bi bi-terminal-fill"></i>
-                            </div>
-                            <h3 class="card-title mb-3">Proficient In Front-End & Back-End Technologies</h3>
-                            <p class="card-text">
-                                Proficient with web application development technologies such as: C#, JavaScript, Python, HTML/CSS, Azure/AWS cloud services for app and database hosting, and Docker for containerization
-                                and deployment.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-        </div>
-    </section>
-    <section class="bg-dark" id="parent-section-index">
-        <!--Project Management API Section-->
-        <section class="p-5 bg-dark" id="parent-section-project-management">
-            <div class="container mb-3">
-                <div class="row align-items-center justify-content-between">
-                    <h1 class="text-center my-5">Projects</h1>
-                    <div class="col-md p-5">
-                        <a href="ProjectManagementApi.html"><img src="images/ProjectManagement.svg" class="img-fluid d-sm-none mb-5" alt="project-management-api mobile"></a>
-                        <h2 class="text-warning" id="project-titles">Project Management API</h2>
-                        <p>
-                            A REST API that lets a user perform CRUD operations on multiple entities such as: Projects, Bugs, Employees and Project Managers. This application 
-                            was made using C# and ASP.NET Core Web API, and uses a Microsoft SQL Server database to store the tables and records of each entity. This project will  be part of a full-stack
-                            web application that will be made with ASP.NET Core MVC for the back-end and utilize React for the front-end.
-                        </p>
-                        <a href="ProjectManagementApi.html" class="btn btn-warning mt-3">
-                            <i class="bi bi-chevron-right"></i> Read More
-                        </a>
-                    </div>
-                    <div class="col-md my-5" id="make-glow-project-management">
-                        <a href="ProjectManagementApi.html"><img id="project-management-picture" src="images/ProjectManagement.svg" class="img-fluid d-none d-sm-block my-4 mx-3" alt="Project Management Picture"></a>
-                    </div>
-                </div>
-            </div>
-            <hr id="hr-dark-background" />
         </section>
-        <!--Bug Tracker App Section-->
-        <section class="p-5 bg-dark mb-3" id="parent-section-bug-tracker">
+        <!--Boxes For Skills-->
+        <section class="p-5 mb-5" id="parent-section-index">
+            <h1 class="text-center my-5 text-dark" id="project-titles">Skills & Technologies</h1>
             <div class="container">
-                <div class="row align-items-center justify-content-between">
-                    <div class="col-md mt-5" id="make-glow-bug-tracker">
-                        <a href="bugtracker.html"><img src="images/bugPic.svg" class="img-fluid d-none d-sm-block my-3 mx-3" alt="bug_app" id="bug-tracker-picture"></a>
-                        <a href="bugtracker.html"><img src="images/bugPic.svg" class="img-fluid d-sm-none"></a>
+                <!--First Row-->
+                <div class="row text-center">
+                    <div class="col-md">
+                        <div class="card text-light shadow-lg" id="dark-card">
+                            <div class="card-body text-center">
+                                <div class="h1 mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-git" viewBox="0 0 16 16">
+                                        <path d="M15.698 7.287 8.712.302a1.03 1.03 0 0 0-1.457 0l-1.45 1.45 1.84 1.84a1.223 1.223 0 0 1 1.55 1.56l1.773 1.774a1.224 1.224 0 0 1 1.267 2.025 1.226 1.226 0 0 1-2.002-1.334L8.58 5.963v4.353a1.226 1.226 0 1 1-1.008-.036V5.887a1.226 1.226 0 0 1-.666-1.608L5.093 2.465l-4.79 4.79a1.03 1.03 0 0 0 0 1.457l6.986 6.986a1.03 1.03 0 0 0 1.457 0l6.953-6.953a1.031 1.031 0 0 0 0-1.457"/>
+                                    </svg>
+                                </div>
+                                <h3 class="card-title mb-3">Git Version Control</h3>
+                                <p class="card-text mb-4">
+                                Utilized Git and GitHub for version control whilde developing projects; familiar with basic Git CLI commands such as git push, git pull, branch creation and merging.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md p-5">
-                        <h2 class="text-primary" id="project-titles">Bug Tracker App</h2>
-                        <p>
-                            A full-stack CRUD web application that lets a user interact with the bugs, projects, employees, and project managers of the organization. This application is 
-                            built using C# and ASP.Net Core Razor Pages, Microsoft SQL Server, HTML/CSS, Bootstrap 5, and Microsoft Azure to host the application. This project utilizes the MVVM design
-                            pattern where the business-logic of each page is tightly-coupled with the associated view component. 
-                        </p>
-                        <a href="bugtracker.html" class="btn btn-primary mt-3">
-                            <i class="bi bi-chevron-right"></i> Read More
-                        </a>
+                    <div class="col-md">
+                        <div class="card text-light shadow-lg" id="dark-card">
+                            <div class="card-body text-center">
+                                <div class="h1 mb-3">
+                                    <i class="bi bi-cloud-download-fill"></i>
+                                </div>
+                                <h3 class="card-title mb-3">RDBMS/SQL Knowledge</h3>
+                                <p class="card-text">
+                                Experienced with database modeling techniques like ERDs and the physical implementation of the database,
+                                writing and executing SQL queries, and working with RDBMS like MySQL and Microsoft SQL Server.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card text-light shadow-lg" id="dark-card">
+                            <div class="card-body text-center">
+                                <div class="h1 mb-3">
+                                    <i class="bi bi-cpu-fill"></i>
+                                </div>
+                                <h3 class="card-title mb-3">OOP Principles</h3>
+                                <p class="card-text">
+                                Familiar with the concepts of Abstraction, Inheritance, Polymorphism, and Encapsulation and the roles they play in software development. 
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <!--Second Row-->
+                <div class="row text-center my-4">
+                    <div class="col-md">
+                        <div class="card text-light shadow-lg" id="dark-card">
+                            <div class="card-body text-center">
+                                <div class="h1 mb-3">
+                                    <i class="bi bi-bug-fill"></i>
+                                </div>
+                                <h3 class="card-title mb-3">Debugging and Troubleshooting</h3>
+                                <p class="card-text">
+                                Experienced with troubleshooting and debugging code while working on personal projects
+                                & assignments.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md"> 
+                        <div class="card text-light shadow-lg" id="dark-card">
+                            <div class="card-body text-center">
+                                <div class="h1 mb-3">
+                                    <i class="bi bi-laptop-fill"></i>
+                                </div>
+                                <h3 class="card-title mb-3">Exposure To Different Programming Frameworks</h3>
+                                <p class="card-text">
+                                .NET/ASP.NET Core, React.js, Dash, and Flask are some of the frameworks I have used to develop web applications.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card text-light shadow-lg" id="dark-card">
+                            <div class="card-body text-center">
+                                <div class="h1 mb-3">
+                                    <i class="bi bi-terminal-fill"></i>
+                                </div>
+                                <h3 class="card-title mb-3">Proficient In Front-End & Back-End Technologies</h3>
+                                <p class="card-text">
+                                    Proficient with web application development technologies such as: C#, JavaScript, Python, HTML/CSS, Azure/AWS cloud services for app and database hosting, and Docker for containerization
+                                    and deployment.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
             </div>
-            <hr id="hr-dark-background"/>
         </section>
-        <!--Horoscope App Section-->
-        <section class="p-5 bg-dark" id="parent-section-horoscope">
-            <div class="container">
-                <div class="row align-items-center justify-content-between">
-                    <div class="col-md p-5">
-                        <a href="horoscopeApp.html"><img src="images/horoscope.svg" class="img-fluid d-sm-none mb-5" alt="horoscope picture mobile"></a>
-                        <h2 class="text-warning" id="project-titles">REST Horoscope App</h2>
-                        <p>
-                            A REST API and web application built using: Python and the Flask 
-                            framework for the API, and JavaScript & React along with HTML/CSS and Bootstrap 5. 
-                            The Python REST API returns a JSON object with the appropriate horoscope data. The React Web Application 
-                            takes the user's horoscope sign and day, uses it to send a GET request to the correct API endpoint, and
-                            parses the JSON object for the necessary horoscope data. Finally, the user's horoscope is displayed to the user asynchronously so that the entire page doesn't have to be re-rendered 
-                            each time a user selects a different sign and day.
-                        </p>
-                        <a href="horoscopeApp.html" class="btn btn-warning mt-3">
-                            <i class="bi bi-chevron-right"></i> Read More
-                        </a>
-                    </div>
-                    <div class="col-md mb-3" id="make-glow-horoscope">
-                        <a href="horoscopeApp.html"><img id="horoscope-picture" src="images/horoscope.svg" class="img-fluid d-none d-sm-block my-3 mx-3" alt="Rest Horoscope App"></a>
-                    </div>
-                </div>
-            </div>
-            <hr id="hr-dark-background" />
-        </section>
-        </section>
-        <!--Malware App Section-->
-        <section class="p-5 bg-dark" id="parent-section-malware-app">
-            <div class="container">
-                <div class="row align-items-center justify-content-between">
-                    <div class="col-md" id="make-glow-malware">
-                        <a href="malwareApp.html"><img src="images/laptop.svg" class="img-fluid d-none d-sm-block my-3 mx-3" alt="laptop picture" id="malware-picture"></a>
-                        <a href="malwareApp.html"><img src="images/laptop.svg" class="img-fluid d-sm-none w-75"></a>
-                    </div>
+        <section class="bg-dark" id="parent-section-index">
+            <!--Project Management API Section-->
+            <section class="p-5 bg-dark" id="parent-section-project-management">
+                <div class="container mb-3">
+                    <div class="row align-items-center justify-content-between">
+                        <h1 class="text-center my-5">Projects</h1>
                         <div class="col-md p-5">
-                            <h2 class="text-warning" id="project-titles">Malware Analyzer</h2>
+                            <a href="ProjectManagementApi.html"><img src="images/ProjectManagement.svg" class="img-fluid d-sm-none mb-5" alt="project-management-api mobile"></a>
+                            <h2 class="text-warning" id="project-titles">Project Management API</h2>
                             <p>
-                                A group project made for my Senior Projects class. The application uses a machine learning algorithm that 
-                                scans a file and predicts whether it's a virus or a safe file. The technologies used include Python, the Dash framework,
-                                and Digital Ocean to host the web application. My main jobs within the group was to integrate my group members code, build the 
-                                web application and UI, and create the documentation for the project such as the SRS, UML Class Diagram, and UML Flow Diagram. 
+                                A REST API that lets a user perform CRUD operations on multiple entities such as: Projects, Bugs, Employees and Project Managers. This application 
+                                was made using C# and ASP.NET Core Web API, and uses a Microsoft SQL Server database to store the tables and records of each entity. This project will  be part of a full-stack
+                                web application that will be made with ASP.NET Core MVC for the back-end and utilize React for the front-end.
                             </p>
-                            <a href="malwareApp.html" class="btn btn-warning mt-3">
+                            <a href="ProjectManagementApi.html" class="btn btn-warning mt-3">
                                 <i class="bi bi-chevron-right"></i> Read More
                             </a>
                         </div>
-                </div>
-            </div>
-            <hr id="hr-dark-background"/>
-        </section>
-        <!--Stock Dashboard App Section-->
-        <section class="p-5 bg-dark" id="parent-section-stock-app">
-            <div class="container">
-                <div class="row align-items-center justify-content-between">
-                    <div class="col-md p-5">
-                        <a href="stockApp.html"><img src="images/dashboard.svg" class="img-fluid d-sm-none mb-5 w-75"></a>
-                        <h2 class="text-primary" id="project-titles">Python Stock App</h2>
-                        <p>A Python stock app that collects stock data using the <span class="text-primary" id="section-keywords">yfinance api</span>, and displays the data using 
-                            the <span class="text-primary" id="section-keywords">Plotly</span> graphing tool & the <span class="text-primary" id="section-keywords">Dash</span> framework. 
-                            Stock data is pulled from the Yahoo! Finance website using the api and stored within a pandas dataframe. Plotly was used to make the main OHLC candlestick chart, 
-                            along with the MACD and RSI subplots. I wanted to use Dash to learn how to build a dashboard using data that was collected.</p>
-                        <a href="stockApp.html" class="btn btn-primary mt-3">
-                            <i class="bi bi-chevron-right"></i> Read More
-                        </a>
-                    </div>
-                    <div class="col-md" id="make-glow-stock-app">
-                        <a href="stockApp.html"><img src="images/dashboard.svg" class="img-fluid d-none d-sm-block my-5 mx-3" alt="Stock App" id="stock-app-picture"></a>
+                        <div class="col-md my-5" id="make-glow-project-management">
+                            <a href="ProjectManagementApi.html"><img id="project-management-picture" src="images/ProjectManagement.svg" class="img-fluid d-none d-sm-block my-4 mx-3" alt="Project Management Picture"></a>
+                        </div>
                     </div>
                 </div>
-            </div>
+                <hr id="hr-dark-background" />
+            </section>
+            <!--Bug Tracker App Section-->
+            <section class="p-5 bg-dark mb-3" id="parent-section-bug-tracker">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-md mt-5" id="make-glow-bug-tracker">
+                            <a href="bugtracker.html"><img src="images/bugPic.svg" class="img-fluid d-none d-sm-block my-3 mx-3" alt="bug_app" id="bug-tracker-picture"></a>
+                            <a href="bugtracker.html"><img src="images/bugPic.svg" class="img-fluid d-sm-none"></a>
+                        </div>
+                        <div class="col-md p-5">
+                            <h2 class="text-primary" id="project-titles">Bug Tracker App</h2>
+                            <p>
+                                A full-stack CRUD web application that lets a user interact with the bugs, projects, employees, and project managers of the organization. This application is 
+                                built using C# and ASP.Net Core Razor Pages, Microsoft SQL Server, HTML/CSS, Bootstrap 5, and Microsoft Azure to host the application. This project utilizes the MVVM design
+                                pattern where the business-logic of each page is tightly-coupled with the associated view component. 
+                            </p>
+                            <a href="bugtracker.html" class="btn btn-primary mt-3">
+                                <i class="bi bi-chevron-right"></i> Read More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <hr id="hr-dark-background"/>
+            </section>
+            <!--Horoscope App Section-->
+            <section class="p-5 bg-dark" id="parent-section-horoscope">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-md p-5">
+                            <a href="horoscopeApp.html"><img src="images/horoscope.svg" class="img-fluid d-sm-none mb-5" alt="horoscope picture mobile"></a>
+                            <h2 class="text-warning" id="project-titles">REST Horoscope App</h2>
+                            <p>
+                                A REST API and web application built using: Python and the Flask 
+                                framework for the API, and JavaScript & React along with HTML/CSS and Bootstrap 5. 
+                                The Python REST API returns a JSON object with the appropriate horoscope data. The React Web Application 
+                                takes the user's horoscope sign and day, uses it to send a GET request to the correct API endpoint, and
+                                parses the JSON object for the necessary horoscope data. Finally, the user's horoscope is displayed to the user asynchronously so that the entire page doesn't have to be re-rendered 
+                                each time a user selects a different sign and day.
+                            </p>
+                            <a href="horoscopeApp.html" class="btn btn-warning mt-3">
+                                <i class="bi bi-chevron-right"></i> Read More
+                            </a>
+                        </div>
+                        <div class="col-md mb-3" id="make-glow-horoscope">
+                            <a href="horoscopeApp.html"><img id="horoscope-picture" src="images/horoscope.svg" class="img-fluid d-none d-sm-block my-3 mx-3" alt="Rest Horoscope App"></a>
+                        </div>
+                    </div>
+                </div>
+                <hr id="hr-dark-background" />
+            </section>
+            <!--Malware App Section-->
+            <section class="p-5 bg-dark" id="parent-section-malware-app">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-md" id="make-glow-malware">
+                            <a href="malwareApp.html"><img src="images/laptop.svg" class="img-fluid d-none d-sm-block my-3 mx-3" alt="laptop picture" id="malware-picture"></a>
+                            <a href="malwareApp.html"><img src="images/laptop.svg" class="img-fluid d-sm-none w-75"></a>
+                        </div>
+                            <div class="col-md p-5">
+                                <h2 class="text-warning" id="project-titles">Malware Analyzer</h2>
+                                <p>
+                                    A group project made for my Senior Projects class. The application uses a machine learning algorithm that 
+                                    scans a file and predicts whether it's a virus or a safe file. The technologies used include Python, the Dash framework,
+                                    and Digital Ocean to host the web application. My main jobs within the group was to integrate my group members code, build the 
+                                    web application and UI, and create the documentation for the project such as the SRS, UML Class Diagram, and UML Flow Diagram. 
+                                </p>
+                                <a href="malwareApp.html" class="btn btn-warning mt-3">
+                                    <i class="bi bi-chevron-right"></i> Read More
+                                </a>
+                            </div>
+                    </div>
+                </div>
+                <hr id="hr-dark-background"/>
+            </section>
+            <!--Stock Dashboard App Section-->
+            <section class="p-5 bg-dark" id="parent-section-stock-app">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-md p-5">
+                            <a href="stockApp.html"><img src="images/dashboard.svg" class="img-fluid d-sm-none mb-5 w-75"></a>
+                            <h2 class="text-primary" id="project-titles">Python Stock App</h2>
+                            <p>A Python stock app that collects stock data using the <span class="text-primary" id="section-keywords">yfinance api</span>, and displays the data using 
+                                the <span class="text-primary" id="section-keywords">Plotly</span> graphing tool & the <span class="text-primary" id="section-keywords">Dash</span> framework. 
+                                Stock data is pulled from the Yahoo! Finance website using the api and stored within a pandas dataframe. Plotly was used to make the main OHLC candlestick chart, 
+                                along with the MACD and RSI subplots. I wanted to use Dash to learn how to build a dashboard using data that was collected.</p>
+                            <a href="stockApp.html" class="btn btn-primary mt-3">
+                                <i class="bi bi-chevron-right"></i> Read More
+                            </a>
+                        </div>
+                        <div class="col-md" id="make-glow-stock-app">
+                            <a href="stockApp.html"><img src="images/dashboard.svg" class="img-fluid d-none d-sm-block my-5 mx-3" alt="Stock App" id="stock-app-picture"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </section>
-    </section>
-</body>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    </body>
 </html>
