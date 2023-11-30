@@ -64,14 +64,14 @@
 }
 
 #project-management-picture {
-  max-width: 75%;
+  max-width: 80%;
   max-height: auto;
   float: right;
   transition-duration: 1s;
 }
 
 #parent-section-project-management:hover #project-management-picture {
-  max-width: 83%;
+  max-width: 85%;
 }
 
 #parent-section-project-management:hover #make-glow-project-management {

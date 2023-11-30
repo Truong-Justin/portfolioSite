@@ -36,17 +36,26 @@
             <div class="container">
                 <div class="d-sm-flex align-items-center justify-content-between">
                     <div class="col-md-8 py-5">
-                        <h1 id="project-titles"><span class="text-warning">Project </span>Management REST API</h1>
+                        <h1 id="project-titles"><span class="text-warning">Project </span>Management App</h1>
                         <p class="lead mb-4 mt-2">
-                            This project was made to get hands-on experience with developing a <span id="project-titles">REST API using C# and the ASP.NET Core Web API framework</span>. While developing this API, I also got a chance to implement the <span class="text-warning">Repository design pattern</span> so that the data-access logic
-                            would be separated from the business-logic. Each repository class interface is dependency injected into it's associated controller class, so that the services are avaiable to the entire controller. The application uses <span id="project-titles">Azure SQL Database</span>, a platform-as-a-service (PaaS) that utilizes the <span id="project-titles">Microsoft SQL Server database engine</span> and hosts the database on Azure. To learn more about the project's features and challenges, scroll-down to read more!
+                            This project was made to get hands-on experience with developing a <span id="project-titles">REST API using C# and the ASP.NET Core Web API framework</span>. 
+                            While developing this API, I also got a chance to implement the <span class="text-warning">Repository design pattern</span> so that the data-access logic
+                            would be separated from the business-logic. The application uses <span id="project-titles">Azure SQL Database</span>, a platform-as-a-service (PaaS) that utilizes 
+                            the <span id="project-titles">Microsoft SQL Server database engine</span> and hosts the database on Azure. A <span class="text-warning">ReactJS front-end</span> component allows the user to interact 
+                            with the projects, bugs, employees, and project managers within the database and calls the REST API for it's back-end services. To learn more about the project's features and challenges, 
+                            scroll down to read more!
                         </p>
-                        <a href="https://projectsmanagementapi.azurewebsites.net/swagger/index.html" class="btn btn-warning btn-md" target="_blank" 
-                            rel="noopener noreferrer">
-                            <img src="images/webAppDark.png" id="web-app-pic">
-                            Click here to demo
+                        <a href="https://projectmanagement.justintruong.studio" class="btn btn-warning btn-md" target="_blank" 
+                        rel="noopener noreferrer">
+                        <img src="images/webAppDark.png" id="web-app-pic">
+                            Web App Demo
                         </a>
-                        <a href="https://github.com/Truong-Justin/ProjectManagementAPI" class="btn btn-md btn-secondary" target="_blank" rel="noopener noreferrer">
+                        <a href="https://projectsmanagementapi.azurewebsites.net/swagger/index.html" class="btn btn-secondary btn-md my-1" target="_blank" 
+                            rel="noopener noreferrer">
+                            <img src="images/apiLogo.png" id="api-logo">
+                            API Demo
+                        </a>
+                        <a href="https://github.com/Truong-Justin/ProjectManagementApp" class="btn btn-md btn-light" target="_blank" rel="noopener noreferrer">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="22" fill="currentColor" class="bi bi-github align-top" viewBox="0 0 16 16">
                                 <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
                             </svg>
@@ -92,24 +101,30 @@
                     <div class="col-md">
                         <h2 id="project-descriptions"><span class=text-warning>Features</span> and highlights</h2>
                         <ul>
-                            <li>Allows a user to perform <span class="text-warning" style="text-decoration-line: underline;">CRUD operations</span> on a Microsft SQL Server database</li>
-                            <li>Demonstrates the <span class="text-warning" style="text-decoration-line: underline;">Repository design pattern</span> that isolates the data-layer from the rest of the application</li>
+                            <li>Allows a user to perform <span class="text-decoration-underline text-warning">CRUD operations</span> on a Microsft SQL Server database</li>
+                            <li>Demonstrates the <span class="text-decoration-underline text-warning">Repository design pattern</span> that isolates the data-layer from the rest of the application</li>
                             <li>Utilizes the ADO.NET library as the data-access technology</li>
                             <li>Uses an interface to define each entity repository with all logical read and write operations specific to the entity</li>
-                            <li><span class="text-warning" style="text-decoration-line: underline;">Microsoft SQL Server</span> and <span class="text-warning" style="text-decoration-line: underline;">Azure SQL</span> was used as the database and hosting environment</li>
+                            <li><span class="text-decoration-underline text-warning">Microsoft SQL Server</span> and <span class="text-decoration-underline text-warning">Azure SQL</span> was used as the database and hosting environment</li>
+                            <li>Utilizes a <span class="text-decoration-underline text-warning">ReactJS</span> front-end component that calls the REST API for it's back-end data-access services.</li>
                         </ul>
                         <h2 id="project-descriptions"><span class=text-warning>Motivations</span> for project</h2>
-                        <p>
-                            I wanted to learn how to design and implement a REST API from the ground-up using C# and the ASP.NET Core Web API framework. I plan to make a full-stack Project Management application that will use this API to access and manipulate the necessary data using ASP.NET Core MVC that will utilize a React front-end. 
+                        <p class="lead">
+                            I wanted to learn how to design and implement a REST API from the ground-up using C# and the ASP.NET Core Web API framework. After accomplishing my initial task, I decided that I then wanted to implement a front-end component so that the user
+                            could interact with the REST API using a web-based user-interface. I used ReactJS for the front-end component that called the REST API for it's back-end services, allowing the user to interact with the different tables and records stored within the Microsoft SQL Server database using
+                            any web-browser. 
                         </p>
                         <h2 id="project-descriptions"><span class=text-warning>What</span> I learned</h2>
-                        <p>
+                        <p class="lead">
                             While developing this application, I got hands-on experience with how to use controllers. While writing the data-access methods for each entity, I also got to learn how to write them asynchronously so that each task wouldn't block each other as the async methods were executing. Finally, I learned how to use a constructor
                             for each controller class, that used the interface associated with each entity's data-access class so that the associated data-access logic could be used through dependency-injection. This was done to allow for loose coupling and the ability to swap out data-access implementations without having to refactor a significant chunk of the codebase. 
                         </p>
-                        <p class="mt-4">
+                        <p class="lead mt-4">
                             When designing the tables for the database, I made use of constraints such as <span class="text-warning">"ON DELETE SET NULL"</span> and <span class="text-warning">"ON DELETE CASCADE"</span>. I used these constraints to ensure that when a project is deleted, all bug records associated with that project would also be deleted; when a project is deleted, the employee assigned to it is also unassigned from the project since
                             it no longer exists. Since the employees are now unassigned, the project manager can now reassign these employees to projects that may need them. Since bugs are usually unique to each piece of software or project, it didn't make sense for them to still exist when a project was deleted so they are deleted along with the project they belonged to. 
+                        </p>
+                        <p class="lead mt-4">After I was done with creating the database and REST API that connected to it, I decided to further develop my front-end skills by developing a ReactJS front-end component that would utilize the REST API. While diving into ReactJS I learned how to: use the useEffect hook to perform the necessary API calls, how to collect user-inputs and perform client-side validations using the React-Hook-Form library, 
+                            established routing between the different ReactJS components using the React-Router library, and added some small animations to the app using the Framer-Motion library.
                         </p>
                     </div>
                 </div>

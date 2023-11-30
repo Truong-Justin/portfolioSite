@@ -174,51 +174,27 @@
         <section class="bg-dark" id="parent-section-index">
             <!--Project Management API Section-->
             <section class="p-5 bg-dark" id="parent-section-project-management">
-                <div class="container mb-3">
+                <div class="container">
                     <div class="row align-items-center justify-content-between">
                         <h1 class="text-center my-5">Projects</h1>
-                        <div class="col-md p-5">
-                            <a href="ProjectManagementApi.html"><img src="images/ProjectManagement.svg" class="img-fluid d-sm-none mb-5" alt="project-management-api mobile"></a>
-                            <h2 class="text-warning" id="project-titles">Project Management API</h2>
-                            <p>
-                                A REST API that lets a user perform CRUD operations on multiple entities such as: Projects, Bugs, Employees and Project Managers. This application 
-                                was made using C# and ASP.NET Core Web API, and uses a Microsoft SQL Server database to store the tables and records of each entity. This project will  be part of a full-stack
-                                web application that will be made with ASP.NET Core MVC for the back-end and utilize React for the front-end.
-                            </p>
-                            <a href="ProjectManagementApi.html" class="btn btn-warning mt-3">
-                                <i class="bi bi-chevron-right"></i> Read More
-                            </a>
+                        <div class="col-md" id="make-glow-project-management">
+                            <a href="ProjectManagementApp.html"><img src="images/ProjectManagement.svg" class="img-fluid d-none d-sm-block my-5 mx-3" id="project-management-picture" alt="project management picture"></a>
+                            <a href="malwareApp.html"><img src="images/ProjectManagement.svg" class="img-fluid d-sm-none w-75"></a>
                         </div>
-                        <div class="col-md my-5" id="make-glow-project-management">
-                            <a href="ProjectManagementApi.html"><img id="project-management-picture" src="images/ProjectManagement.svg" class="img-fluid d-none d-sm-block my-4 mx-3" alt="Project Management Picture"></a>
-                        </div>
+                            <div class="col-md p-5">
+                                <h2 class="text-warning" id="project-titles">Project Management App</h2>
+                                <p>
+                                A full-stack web application that lets a user manage projects, bugs, employees, and project managers within a Microsoft SQL Server database. This application is comprised of two components:
+                                a ReactJS front-end component and a ASP.NET Core Web API that handles the back-end services. Azure SQL was used to host the Microsoft SQL Server database, and Azure App service for hosting the 
+                                REST API and the React front-end. This application also utilizes the Repository Design pattern in order to isolate the data-access logic from the business-logic for the REST API back-end.
+                                </p>
+                                <a href="ProjectManagementApp.html" class="btn btn-warning mt-3">
+                                    <i class="bi bi-chevron-right"></i> Read More
+                                </a>
+                            </div>
                     </div>
                 </div>
                 <hr id="hr-dark-background" />
-            </section>
-            <!--Bug Tracker App Section-->
-            <section class="p-5 bg-dark mb-3" id="parent-section-bug-tracker">
-                <div class="container">
-                    <div class="row align-items-center justify-content-between">
-                        <div class="col-md mt-5" id="make-glow-bug-tracker">
-                            <a href="bugtracker.html"><img src="images/bugPic.svg" class="img-fluid d-none d-sm-block my-3 mx-3" alt="bug_app" id="bug-tracker-picture"></a>
-                            <a href="bugtracker.html"><img src="images/bugPic.svg" class="img-fluid d-sm-none"></a>
-                        </div>
-                        <div class="col-md p-5">
-                            <h2 class="text-primary" id="project-titles">Bug Tracker App</h2>
-                            <p>
-                                A full-stack and responsive web application that lets a user interact with the bugs, projects, employees, and project managers within the database. This application was
-                                built using C#/.NET 7.0 and ASP.Net Core Razor Pages, Microsoft SQL Server, HTML/CSS, Bootstrap 5, Microsoft Azure to host the application, and Azure SQL to host the database.
-                                ADO.NET was used as the data-access technology in order to understand how an ORM framework such as the Entity Framework operates under-the-hood, and the Repository Design Pattern was used to abstract away the data-access
-                                logic from the business logic of the application.
-                            </p>
-                            <a href="bugtracker.html" class="btn btn-primary mt-3">
-                                <i class="bi bi-chevron-right"></i> Read More
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <hr id="hr-dark-background"/>
             </section>
             <!--Horoscope App Section-->
             <section class="p-5 bg-dark" id="parent-section-horoscope">
