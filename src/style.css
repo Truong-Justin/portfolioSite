@@ -26,7 +26,7 @@
 
 .card{
   height: 100%;
-  }
+}
 
 #border {
   border-width: 4px;
@@ -82,24 +82,6 @@
   transition-duration: .5s;
 }
 
-#bug-tracker-picture {
-  max-width: 75%;
-  max-height: auto;
-  transition-duration: 1s;
-}
-
-#parent-section-bug-tracker:hover #bug-tracker-picture {
-  max-width: 80%;
-}
-
-#parent-section-bug-tracker:hover #make-glow-bug-tracker {
-  border-radius: 15%;
-  color: black;
-  background: silver;
-  box-shadow: 0 0 100px wheat;
-  transition-duration: .5s;
-}
-
 #horoscope-picture {
   float: right;
   max-height: auto;
@@ -136,25 +118,6 @@
   background: silver;
   box-shadow: 0 0 100px wheat;
   transition-duration: .5s;
-}
-
-#stock-app-picture {
-  float: right;
-  max-height: auto;
-  max-width: 75%;
-  transition-duration: 1s;
-}
-
-#parent-section-stock-app:hover #stock-app-picture{
-  max-width: 80%;
-}
-
-#parent-section-stock-app:hover #make-glow-stock-app {
-  border-radius: 20%;
-  color: black;
-  background: silver;
-  box-shadow: 0 0 100px wheat;
-  transition-duration: 1s;
 }
 
 p {
