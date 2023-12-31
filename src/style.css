@@ -134,11 +134,13 @@ li {
 
 #dark-card {
   background-color: #6c757d;
-  transition-duration: 1s;
+  transition-duration: .5s;
+  border-radius: 5%;
 }
 
 #dark-card:hover {
   background-color: #343a40;
+  transform: scale(1.05);
 }
 
 #dark-card:hover h3{
